@@ -10,7 +10,7 @@ Polling station to area mapping. `area` value is one of:
 * town_below100
 * town_over100 (one of 9 towns with population over 100.000)
 * city (one of 5 region centers)
-* Minsk
+* capital (Minsk)
 * embassy
 * suburb (20 km around Minsk, 10 km around other region centers)
 
