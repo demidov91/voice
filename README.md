@@ -88,9 +88,9 @@ There are 58 poll stations with missing Voice data which is 1% of total number. 
 * `id` - poll station unique identifier.
 * `area` - kind of area (see **geo-categorized.csv**)
 * `source` - one of:
- * `official` - numbers from official report
- * `official-corrupted-fix` - numbers from official report with estimated number for the `corrupted` column (it's often missed)
- * `estimated` - estimated number based on coefficients described above.
+  * `official` - numbers from official report
+  * `official-corrupted-fix` - numbers from official report with estimated number for the `corrupted` column (it's often missed)
+  * `estimated` - estimated number based on coefficients described above.
 * `tihanovkaja`, `cherechen`,	`dmitriyev`,	`kanopatskaja`, `against`, `corrupted` - official or estimated number of votes for the candidate
 
 ### candidates-total.csv
@@ -111,7 +111,10 @@ Absolute values for votes for each alternative candidate:
 Turnout should be estimated separately after analyzis of Zubr data. After finding out turnout for each area/region trustworthy relative resuts per each poll station can be obtained. But so far considering 75% turnout through the country (vs 84% officially):
 
 Lukashenko - 64%
+
 Tsikhanouskaya - 27%
+
 Against everyone - 4%
+
 Dmitriyev, Cherechen, Kanopatskaja - 5% in toatal 
 
