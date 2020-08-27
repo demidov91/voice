@@ -98,7 +98,7 @@ There are 58 poll stations with missing Voice data which is 1% of total number. 
 Absolute values for votes for each alternative candidate:
 
 |candidate|estimated_total|
-|---|---|
+|---|---:|
 |tihanovkaja|1427032|
 |against|218322|
 |dmitriyev|63605|
