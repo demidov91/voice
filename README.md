@@ -108,13 +108,13 @@ Absolute values for votes for each alternative candidate:
 
 ## Estimated final results.
 
-Turnout should be estimated separately after analyzis of Zubr data. After finding out turnout for each area/region trustworthy relative resuts per each poll station can be obtained. But so far considering 75% turnout through the country (vs 84% officially):
+Turnout should be estimated separately after analyzis of Zubr data. After finding out turnout for each area/region trustworthy relative resuts per each poll station can be obtained. But **so far** considering 75% turnout through the country (vs 84% officially) and 60% turnout in Minsk (vs 67% officially):
 
-Lukashenko - 64%
+Lukashenko - 64% (31% in Minsk)
 
-Tsikhanouskaya - 27%
+Tsikhanouskaya - 27% (53% in Minsk)
 
-Against everyone - 4%
+Against everyone - 4% (8% in Minsk)
 
 Dmitriyev, Cherechen, Kanopatskaja - 5% in toatal 
 
