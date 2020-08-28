@@ -1,0 +1,8 @@
+area,corrupted_coefficient
+city,0.077
+suburb,0.100
+capital,0.138
+village,0.103
+town_below100,0.089
+town_over100,0.098
+embassy,0.255

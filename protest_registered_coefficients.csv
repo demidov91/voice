@@ -1,0 +1,8 @@
+area,protest_coefficient
+city,2.108
+suburb,1.758
+capital,1.700
+village,2.569
+town_below100,2.587
+town_over100,2.455
+embassy,1.596
