@@ -62,6 +62,11 @@ Voice data to voters count is a linear regression `y=kx` with coefficient `k` ca
 Voice-to-Tsikhanouskaya coefficients can be found in `tihanovkaja_photo_coefficients.csv`
 Voice-to-AgainstLukashenko coefficients can be found in `protest_registered_coefficients.csv`
 
+|||
+|---|---|
+|![plot1](images/photo-tihanovkaja.png)|![plot2](images/registered-protest.png)|
+
+
 |area|tihanovkaja_photo_coefficient|protest_registered_coefficient|
 |---|---|---|
 |capital|1.9|1.7|
@@ -76,13 +81,13 @@ Voice-to-AgainstLukashenko coefficients can be found in `protest_registered_coef
 Protest-to-Candidate coefficients can be found in `alt_candidates_coefficients.csv`. Here are very approximate values for a quick refererence: 
 
 
-|candidate|coefficient|top areas|
-|---|---|---|
-|against|0.46|region centers|
-|dmitriyev|0.16|suburb|
-|kanopatskaja|0.14|villages|
-|cherechen|0.13|big towns|
-|corrupted|0.1|embassies, Minsk|
+|candidate|plot|coefficient|top areas|
+|---|---|---|---|
+|against|![against](images/against.png)|0.46|region centers|
+|dmitriyev|![dmitriyev](images/dmitriyev.png)|0.16|suburb||
+|kanopatskaja|![against](images/kanopatskaja.png)|0.14|villages||
+|cherechen|![cherechen](images/cherechen.png)|0.13|big towns||
+|corrupted|![corrupted](images/corrupted.png)|0.1|embassies, Minsk||
 
 
 ## Calculating results.
