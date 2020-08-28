@@ -1,8 +1,8 @@
-area,coefficient,more_mean,less_mean,more_std,less_std
-city,2.576,1.535,0.642,0.495,0.173
-suburb,2.232,1.944,0.832,1.667,0.094
-capital,1.917,1.447,0.732,0.787,0.142
-village,3.305,2.894,0.770,1.665,0.199
-town_below100,3.634,1.531,0.650,0.392,0.209
-town_over100,3.167,1.609,0.579,0.643,0.193
-embassy,13.706,4.160,,0.813,
+area,coefficient
+city,2.577
+suburb,2.236
+capital,1.928
+village,3.303
+town_below100,3.634
+town_over100,3.167
+embassy,13.706
