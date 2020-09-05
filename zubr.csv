@@ -4666,7 +4666,7 @@ id,zubr_id,observers,accreditation-reject,let-observer-in-violation,no-let-obser
 05-039-0004,4819,0,False,False,False,False,False,False,False,False,False,False,False,False
 05-039-0005,4820,5,False,False,True,False,False,False,False,False,False,False,False,True
 05-039-0006,4821,2,False,False,False,False,False,False,False,False,False,False,False,False
-05-039-0007,4822,4,False,False,True,False,False,False,False,True,False,False,True,False
+05-039-0007,4822,4,False,False,True,False,False,False,False,False,False,False,True,False
 05-039-0008,4823,3,False,False,True,False,False,False,False,False,True,False,False,False
 05-039-0009,4824,2,False,False,True,False,False,False,False,False,False,True,False,True
 05-039-0010,4825,3,False,False,True,False,False,False,False,False,False,False,False,False
