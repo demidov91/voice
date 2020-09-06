@@ -781,10 +781,10 @@ id,zubr_id,observers,accreditation-reject,let-observer-in-violation,no-let-obser
 01-010-0024,934,0,False,False,False,False,False,True,False,False,False,False,False,False
 01-010-0025,935,3,False,True,True,False,False,False,False,False,False,False,False,True
 01-010-0026,936,2,False,False,False,False,False,False,False,False,False,False,False,False
-01-010-0027,937,1,False,False,True,False,False,False,False,False,False,False,False,False
+01-010-0027,937,1,False,False,False,False,False,False,False,False,False,False,False,False
 01-010-0028,938,2,False,False,False,False,False,False,False,False,False,False,False,False
 01-010-0029,939,5,True,False,True,False,False,True,False,True,True,True,True,True
-01-010-0030,940,3,False,False,False,False,False,False,False,False,True,False,False,False
+01-010-0030,940,3,False,False,False,False,False,False,False,False,False,False,False,False
 01-010-0031,941,2,False,False,False,False,False,False,False,True,False,False,True,True
 01-010-0032,942,2,False,False,True,False,False,False,False,False,False,False,False,False
 01-010-0033,943,3,False,False,False,False,False,False,False,False,False,False,False,False
@@ -861,7 +861,7 @@ id,zubr_id,observers,accreditation-reject,let-observer-in-violation,no-let-obser
 01-011-0060,1014,3,False,False,False,False,False,False,False,False,False,False,False,False
 01-011-0061,1015,2,False,False,True,False,False,False,False,False,False,False,False,False
 01-011-0062,1016,1,False,False,False,False,False,False,True,True,False,True,True,True
-01-011-0063,1017,1,False,False,False,False,False,False,False,False,True,False,False,False
+01-011-0063,1017,1,False,False,False,False,False,False,False,False,False,False,False,False
 01-011-0064,1018,2,True,False,True,True,False,True,False,True,True,True,True,True
 01-011-0065,1019,2,False,False,True,False,False,False,False,False,False,False,False,False
 01-011-0066,1020,1,False,False,False,False,False,False,False,False,False,False,False,False
@@ -3148,7 +3148,7 @@ id,zubr_id,observers,accreditation-reject,let-observer-in-violation,no-let-obser
 03-100-0006,3301,1,False,False,False,False,False,False,False,False,True,False,False,False
 03-100-0007,3302,1,False,False,False,False,False,False,False,False,False,False,False,False
 03-100-0008,3303,1,False,False,False,False,False,False,False,False,False,False,False,False
-03-100-0009,3304,1,False,False,False,False,False,False,False,False,False,False,False,True
+03-100-0009,3304,1,False,False,False,False,False,False,False,False,False,False,False,False
 03-100-0010,3305,0,False,False,False,False,False,False,False,False,False,False,False,False
 03-100-0011,3306,2,False,False,False,False,False,False,False,False,False,False,False,False
 03-100-0012,3307,1,False,False,False,False,False,False,False,False,False,False,False,False
@@ -3365,7 +3365,7 @@ id,zubr_id,observers,accreditation-reject,let-observer-in-violation,no-let-obser
 04-021-0020,3518,0,False,False,False,False,False,False,False,False,False,False,False,False
 04-021-0021,3519,0,False,False,False,False,False,False,False,False,False,False,False,False
 04-021-0022,3520,1,False,False,False,False,False,False,False,False,False,False,False,False
-04-021-0023,3521,4,False,False,True,False,False,False,False,False,True,False,False,False
+04-021-0023,3521,4,False,False,False,False,False,False,False,False,False,False,False,False
 04-021-0024,3522,0,False,False,False,False,False,False,False,False,False,False,False,False
 04-021-0025,3523,0,False,False,False,False,False,False,False,False,False,False,False,False
 04-021-0026,3524,1,False,False,False,False,False,False,False,False,False,False,False,False
@@ -4430,7 +4430,7 @@ id,zubr_id,observers,accreditation-reject,let-observer-in-violation,no-let-obser
 05-141-0011,4583,7,False,False,False,False,False,False,False,False,False,False,False,False
 05-141-0012,4584,16,False,False,False,False,False,False,False,True,False,False,True,True
 05-141-0013,4585,9,False,False,False,False,False,False,False,False,False,False,False,False
-05-141-0014,4586,4,False,False,False,False,False,False,False,False,False,False,False,True
+05-141-0014,4586,4,False,False,False,False,False,False,False,False,False,False,False,False
 05-141-0015,4587,1,False,False,False,False,False,False,False,False,False,False,False,True
 05-141-0016,4588,0,False,False,False,False,False,False,False,False,False,False,False,False
 05-141-0017,4589,4,False,False,False,False,False,False,False,False,False,False,False,False
@@ -4456,12 +4456,12 @@ id,zubr_id,observers,accreditation-reject,let-observer-in-violation,no-let-obser
 05-141-0037,4609,0,False,False,False,False,False,False,False,False,False,False,False,False
 05-141-0038,4610,13,False,False,True,False,True,False,True,True,False,False,True,True
 05-141-0039,4611,5,False,False,False,False,False,False,False,True,False,False,False,True
-05-141-0040,4612,8,False,False,False,False,False,False,False,False,False,False,False,True
+05-141-0040,4612,8,False,False,False,False,False,False,False,False,False,False,False,False
 05-141-0041,4613,3,False,False,False,False,False,False,False,False,False,False,False,False
 05-141-0042,4614,5,False,False,True,False,False,False,False,True,False,True,False,True
 05-141-0043,4615,2,False,False,True,False,False,True,False,True,False,False,False,False
 05-141-0044,4616,5,False,False,False,False,False,False,False,False,False,False,False,False
-05-141-0045,4617,5,False,False,False,False,True,False,False,False,False,False,False,True
+05-141-0045,4617,5,False,False,False,False,False,False,False,False,False,False,False,False
 05-141-0046,4618,1,False,False,False,False,False,False,False,False,False,False,False,False
 05-141-0047,4619,5,False,False,True,False,False,False,False,True,False,False,False,False
 05-141-0048,4620,1,False,False,False,False,False,False,False,False,False,False,False,False
@@ -4470,7 +4470,7 @@ id,zubr_id,observers,accreditation-reject,let-observer-in-violation,no-let-obser
 05-141-0051,4623,7,False,False,False,False,False,False,False,False,False,False,False,False
 05-141-0052,4624,5,False,False,True,False,False,False,False,True,False,True,False,True
 05-141-0053,4625,7,False,False,True,True,False,False,False,False,False,False,True,True
-05-141-0054,4626,5,False,True,True,False,False,False,False,False,False,False,False,False
+05-141-0054,4626,5,False,False,False,False,False,False,False,False,False,False,False,False
 05-141-0055,4627,5,False,False,False,False,False,False,False,False,False,False,False,False
 05-141-0056,4628,4,False,False,False,False,False,False,False,False,False,False,False,False
 05-141-0057,4629,3,False,False,False,False,False,False,False,False,False,False,False,False

@@ -129,6 +129,7 @@ id,non_trust_reason
 01-011-0078,Too many for Lukashenko. Conflict reported.
 02-014-0016,Too many for Lukashenko. No observers.
 02-015-0040,Too many for Lukashenko. Zubr report.
+02-016-0012,Too many for Lukashenko. No observers.
 02-016-0044,Too many for Lukashenko. Zubr report.
 02-065-0004,Too many for Lukashenko. Zubr report.
 02-067-0002,Too many for Lukashenko. Zubr report.
@@ -198,8 +199,11 @@ id,non_trust_reason
 05-141-0062,Too many for Lukashenko. Zubr report.
 05-141-0067,Too many for Lukashenko. Zubr report.
 05-141-0071,Too many for Lukashenko. Zubr report.
+05-141-0073,Too many for Lukashenko. Zubr report.
 05-141-0082,Too many for Lukashenko. Zubr report.
 05-141-0085,Too many for Lukashenko. Zubr report.
+05-141-0086,Too many for Lukashenko. Zubr report.
+05-141-0088,Too many for Lukashenko. Zubr report.
 05-141-0089,Too many for Lukashenko. Zubr report.
 05-141-0099,Too many for Lukashenko. Zubr report.
 06-012-0056,Too many for Lukashenko. Conflict reported.
@@ -234,6 +238,7 @@ id,non_trust_reason
 07-009-0017,Too many for Lukashenko. Zubr report.
 07-003-0020,Too many for Lukashenko. Zubr report.
 07-002-0043,Too many for Lukashenko. Zubr report.
+07-002-0050,Too many for Lukashenko. Zubr report.
 07-002-0065,Too many for Lukashenko. Zubr report.
 07-003-0010,Too many for Lukashenko. Zubr report.
 07-003-0011,Too many for Lukashenko. Zubr report.
@@ -247,3 +252,22 @@ id,non_trust_reason
 07-005-0014,Too many for Lukashenko. Zubr report.
 07-006-0070,Too many for Lukashenko. Zubr report.
 07-002-0115,Too many for Lukashenko. Zubr report.
+01-055-0017,Too few Tihanovkaja. No observers.
+01-056-0048,Too few Tihanovkaja. Conflict reported.
+02-074-0015,Too few Tihanovkaja. Zubr report.
+02-075-0056,Too few Tihanovkaja. Zubr report.
+03-091-0029,Too few Tihanovkaja. Zubr report.
+03-096-0004,Too few Tihanovkaja. Zubr report.
+03-100-0045,Too few Tihanovkaja. No observers.
+04-021-0040,Too few Tihanovkaja. No observers.
+06-024-0050,Too few Tihanovkaja. No observers.
+05-041-0028,Too few Tihanovkaja. Zubr report.
+05-141-0016,Too few Tihanovkaja. No observers.
+05-141-0029,Too few Tihanovkaja. Zubr report.
+05-141-0007,Too few Tihanovkaja. Zubr report.
+05-141-0084,Too few Tihanovkaja. Zubr report.
+06-013-0017,Too few Tihanovkaja. Conflict reported.
+06-135-0009,Too few Tihanovkaja. Zubr report.
+07-001-0078,Too few Tihanovkaja. Conflict reported.
+07-006-0016,Too few Tihanovkaja. Zubr report.
+07-006-0071,Too few Tihanovkaja. Zubr report.
