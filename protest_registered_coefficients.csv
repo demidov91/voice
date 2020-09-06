@@ -1,8 +1,9 @@
 area,protest_coefficient
-city,2.575
+city,2.576
 minsk_suburb,1.775
+minsk_village,2.885
 capital,2.059
-village,3.219
-town_below100,3.132
+village,5.114
+town_below100,3.127
 town_over100,3.001
-embassy,1.605
+embassy,1.714
