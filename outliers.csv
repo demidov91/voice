@@ -1,6 +1,9 @@
 id,non_trust_reason
 04-022-0069,Hrodna hospital. Too many votes. It's likely that people didn't expect to vote from there.
 05-141-0021,Minsk region children hospital. People didn't expect to vote from there.
+05-141-0022,Minsk region hospital. People didn't expect to vote from there.
+05-141-0023,Cancer clinic. People didn't expect to vote from there.
+05-141-0037,Clinic. People didn't expect to vote from there.
 04-106-0002,Less than expected. Many reports on Zubr platform.
 01-047-0054,Less than expected. Zubr report.
 07-002-0103,SPB embassy. Less than expected. Zubr report.
@@ -80,6 +83,7 @@ id,non_trust_reason
 06-013-0029,Report does not exist anymore.
 02-075-0075,Report does not exist anymore.
 01-054-0026,Zubr report.
+04-022-0097,Too many for Lukashenko. No report.
 04-021-0002,Too many for Lukashenko. Zubr report.
 04-021-0046,Too many for Lukashenko. Zubr report.
 04-021-0047,Too many for Lukashenko. Zubr report.
@@ -286,9 +290,25 @@ id,non_trust_reason
 01-011-0036,"High turnout, many for Lukashenko. Minor zubr report."
 01-011-0046,"High turnout, many for Lukashenko. Minor zubr report."
 01-011-0076,"High turnout, many for Lukashenko. Minor zubr report."
+02-074-0005,"High turnout, many for Lukashenko. Minor zubr report."
+02-066-0013,"High turnout, many for Lukashenko. Minor zubr report."
 04-021-0011,"High turnout, many for Lukashenko. Minor zubr report."
 04-022-0068,"High turnout, many for Lukashenko. Minor zubr report."
+05-026-0009,"High turnout, many for Lukashenko. Minor zubr report."
 06-023-0135,"High turnout, many for Lukashenko. Minor zubr report."
 07-001-0059,"High turnout, many for Lukashenko. Minor zubr report."
 07-004-0028,"High turnout, many for Lukashenko. Minor zubr report."
 07-005-0018,"High turnout, many for Lukashenko. Minor zubr report."
+01-010-0004,"High turnout, many for Lukashenko. No zubr report."
+01-011-0088,"High turnout, many for Lukashenko. No zubr report."
+01-049-0006,"High turnout, many for Lukashenko. No zubr report."
+02-016-0071,"High turnout, many for Lukashenko. No zubr report."
+02-075-0002,"High turnout, many for Lukashenko. No zubr report."
+03-096-0043,"High turnout, many for Lukashenko. No zubr report."
+04-022-0082,"High turnout, many for Lukashenko. No zubr report."
+04-022-0095,"High turnout, many for Lukashenko. No zubr report."
+04-112-0023,"High turnout, many for Lukashenko. No zubr report."
+04-119-0011,"High turnout, many for Lukashenko. No zubr report."
+05-038-0003,"High turnout, many for Lukashenko. No zubr report."
+05-041-0011,"High turnout, many for Lukashenko. No zubr report."
+05-041-0026,"High turnout, many for Lukashenko. No zubr report."
