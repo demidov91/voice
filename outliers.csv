@@ -1,13 +1,13 @@
 id,non_trust_reason
-04-022-0069,Hrodna hospital. Too many votes. It's likely that people didn't expect to vote from there.
-05-141-0021,Minsk region children hospital. People didn't expect to vote from there.
-05-141-0022,Minsk region hospital. People didn't expect to vote from there.
-05-141-0023,Cancer clinic. People didn't expect to vote from there.
-05-141-0037,Clinic. People didn't expect to vote from there.
+04-022-0069,Trusted. Hrodna hospital. Too many votes. It's likely that people didn't expect to vote from there.
+05-141-0021,Trusted. Minsk region children hospital. People didn't expect to vote from there.
+05-141-0022,Trusted. Minsk region hospital. People didn't expect to vote from there.
+05-141-0023,Trusted. Cancer clinic. People didn't expect to vote from there.
+05-141-0037,Trusted. Clinic. People didn't expect to vote from there.
+07-002-0084,Trusted. Too many for Tihanovkaja
 04-106-0002,Less than expected. Many reports on Zubr platform.
 01-047-0054,Less than expected. Zubr report.
 07-002-0103,SPB embassy. Less than expected. Zubr report.
-07-002-0084,Too many for Tihanovkaja
 05-026-0041,Too many for Cherechen and Kanopatskaja. Zubr report.
 05-141-0095,Too many for Cherechen. Voted less than registered in Voice.
 01-047-0042,Too many for Cherechen. Voted less than registered in Voice.
@@ -76,14 +76,6 @@ id,non_trust_reason
 04-112-0013,Mess in the report.
 05-141-0013,Mess in the report.
 07-006-0049,Mess in the report.
-06-012-0086,Missing data in report.
-07-004-0034,Missing data in report.
-03-020-0018,Report does not exist anymore. Messed data.
-05-036-0043,Report does not exist anymore.
-06-013-0029,Report does not exist anymore.
-02-075-0075,Report does not exist anymore.
-02-015-0018,Report does not exist anymore.
-02-016-0025,Report does not exist anymore.
 01-054-0026,Zubr report.
 04-022-0097,Too many for Lukashenko. No report.
 04-021-0002,Too many for Lukashenko. Zubr report.
@@ -312,5 +304,5 @@ id,non_trust_reason
 04-112-0023,"High turnout, many for Lukashenko. No zubr report."
 04-119-0011,"High turnout, many for Lukashenko. No zubr report."
 05-038-0003,"High turnout, many for Lukashenko. No zubr report."
-05-041-0011,"High turnout, many for Lukashenko. No zubr report."
-05-041-0026,"High turnout, many for Lukashenko. No zubr report."
+05-041-0011,"Trusted. High turnout, many for Lukashenko. No zubr report."
+05-041-0026,"Trusted. High turnout, many for Lukashenko. No zubr report."
