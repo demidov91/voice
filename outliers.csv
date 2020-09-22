@@ -4,7 +4,8 @@ id,non_trust_reason
 05-141-0022,Trusted. Minsk region hospital. People didn't expect to vote from there.
 05-141-0023,Trusted. Cancer clinic. People didn't expect to vote from there.
 05-141-0037,Trusted. Clinic. People didn't expect to vote from there.
-07-002-0084,Trusted. Too many for Tihanovkaja
+05-141-0026,Trusted. Novaja Baravaja is a separate world.
+05-141-0027,Trusted. Novaja Baravaja is a separate world.
 04-106-0002,Less than expected. Many reports on Zubr platform.
 01-047-0054,Less than expected. Zubr report.
 07-002-0103,SPB embassy. Less than expected. Zubr report.
@@ -88,6 +89,7 @@ id,non_trust_reason
 04-022-0092,Too many for Lukashenko. Zubr report.
 04-022-0093,Too many for Lukashenko. Zubr report (see 0092).
 04-022-0094,Too many for Lukashenko. Zubr report (see 0092).
+04-106-0012,Too many for Lukashenko. Zubr report.
 04-112-0011,Too many for Lukashenko. Zubr report.
 04-112-0014,Too many for Lukashenko. Zubr report.
 04-112-0027,Too many for Lukashenko. Zubr report.
@@ -95,6 +97,7 @@ id,non_trust_reason
 04-112-0008,Too many for Lukashenko. Zubr report.
 04-112-0019,Too many for Lukashenko. No observers.
 04-112-0033,Too many for Lukashenko. Zubr report.
+04-112-0035,Too many for Lukashenko. Zubr report. One observer.
 04-118-0002,Too many for Lukashenko. No observers.
 04-114-0003,Too many for Lukashenko. Zubr report.
 04-114-0028,Too many for Lukashenko. Zubr report.
@@ -108,13 +111,19 @@ id,non_trust_reason
 04-022-0099,Too many for Lukashenko. Zubr report.
 04-022-0098,Too many for Lukashenko. Same school as 0099.
 04-022-0118,Too many for Lukashenko. Zubr report.
+01-010-0002,Too many for Lukashenko. Zubr report.
 01-010-0005,Too many for Lukashenko. Mess in Zubr data.
+01-010-0015,Too many for Lukashenko. Zubr report.
 01-010-0021,Too many for Lukashenko. Zubr report.
 01-010-0023,Too many for Lukashenko. No observers.
+01-010-0035,Too many for Lukashenko. Zubr report.
 01-010-0042,Too many for Lukashenko. Zubr report.
 01-011-0005,Too many for Lukashenko. Zubr report.
 01-011-0010,Too many for Lukashenko. Zubr report.
 01-011-0041,Too many for Lukashenko. Zubr report.
+01-011-0042,Too many for Lukashenko. Zubr report.
+01-011-0047,Too many for Lukashenko. Zubr report.
+01-010-0021,Too many for Lukashenko. Zubr report.
 01-011-0048,Too many for Lukashenko. Zubr report.
 01-011-0062,Too many for Lukashenko. Zubr report.
 01-011-0080,Too many for Lukashenko. Zubr report.
@@ -144,12 +153,16 @@ id,non_trust_reason
 02-075-0013,Too many for Lukashenko. No observers.
 02-074-0023,Too many for Lukashenko. No observers.
 03-019-0019,Too many for Lukashenko. One observer.
+03-091-0001,Too many for Lukashenko. Zubr report.
 03-091-0005,Too many for Lukashenko. Conflict reported.
 03-091-0009,Too many for Lukashenko. One observer.
+03-091-0024,Too many for Lukashenko. Zubr report.
 03-091-0043,Too many for Lukashenko. No observers.
 03-096-0009,Too many for Lukashenko. No observers.
 03-096-0026,Too many for Lukashenko. No observers.
+03-096-0045,Too many for Lukashenko. Zubr report.
 03-096-0058,Too many for Lukashenko. Zubr report.
+03-100-0014,Too many for Lukashenko. Zubr report. One observer.
 05-026-0010,Too many for Lukashenko. Zubr report.
 05-026-0012,Too many for Lukashenko. Zubr report.
 05-026-0029,Too many for Lukashenko. Zubr report.
@@ -167,6 +180,7 @@ id,non_trust_reason
 05-036-0001,Too many for Lukashenko. Zubr report.
 05-036-0010,Too many for Lukashenko. Zubr report.
 05-036-0011,Too many for Lukashenko. Zubr report.
+05-036-0020,Too many for Lukashenko. Zubr report.
 05-036-0021,Too many for Lukashenko. Zubr report.
 05-036-0022,Too many for Lukashenko. Zubr report.
 05-036-0027,Too many for Lukashenko. Zubr report.
@@ -176,6 +190,7 @@ id,non_trust_reason
 05-038-0014,Too many for Lukashenko. Zubr report.
 05-038-0032,Too many for Lukashenko. Zubr report.
 05-039-0007,Too many for Lukashenko. Zubr report.
+05-039-0009,Too many for Lukashenko. Zubr report.
 05-039-0050,Too many for Lukashenko. Conflict reported.
 05-040-0018,Too many for Lukashenko. No observers.
 05-041-0005,Too many for Lukashenko. Zubr report.
@@ -215,6 +230,7 @@ id,non_trust_reason
 06-012-0080,Too many for Lukashenko. Zubr report.
 06-013-0010,Too many for Lukashenko. Zubr report.
 06-013-0014,Too many for Lukashenko. No observers.
+06-013-0038,Too many for Lukashenko. Zubr report.
 06-125-0010,Too many for Lukashenko. Zubr report.
 06-135-0007,Too many for Lukashenko. Zubr report.
 01-047-0030,Too many for Lukashenko. Zubr report.
