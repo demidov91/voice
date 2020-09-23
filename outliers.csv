@@ -78,6 +78,87 @@ id,non_trust_reason
 05-141-0013,Mess in the report.
 07-006-0049,Mess in the report.
 01-054-0026,Zubr report.
+01-010-0002,Too many for Lukashenko. Zubr report.
+01-010-0005,Too many for Lukashenko. Mess in Zubr data.
+01-010-0006,Too many for Lukashenko. Zubr report.
+01-010-0008,Too many for Lukashenko. High turnout. One observer.
+01-010-0015,Too many for Lukashenko. Zubr report.
+01-010-0020,Too many for Lukashenko. Zubr report.
+01-010-0021,Too many for Lukashenko. Zubr report.
+01-010-0022,Too many for Lukashenko. High turnout. One observer.
+01-010-0027,Too many for Lukashenko. High turnout. One observer.
+01-010-0023,Too many for Lukashenko. No observers.
+01-010-0031,Too many for Lukashenko. Zubr report.
+01-010-0035,Too many for Lukashenko. Zubr report.
+01-010-0036,Too many for Lukashenko. Zubr report.
+01-010-0040,Too many for Lukashenko. No observers.
+01-010-0042,Too many for Lukashenko. Zubr report.
+01-011-0005,Too many for Lukashenko. Zubr report.
+01-011-0010,Too many for Lukashenko. Zubr report.
+01-011-0041,Too many for Lukashenko. Zubr report.
+01-011-0042,Too many for Lukashenko. Zubr report.
+01-011-0047,Too many for Lukashenko. Zubr report.
+01-011-0048,Too many for Lukashenko. Zubr report.
+01-011-0062,Too many for Lukashenko. Zubr report.
+01-011-0063,Too many for Lukashenko. High turnout. One observer.
+01-011-0066,Too many for Lukashenko. High turnout. One observer.
+01-011-0080,Too many for Lukashenko. Zubr report.
+01-049-0008,Too many for Lukashenko. One observer.
+01-054-0010,Too many for Lukashenko. Zubr report.
+01-055-0004,Too many for Lukashenko. Zubr report.
+01-056-0007,Too many for Lukashenko. Zubr report.
+01-056-0020,Too many for Lukashenko. Zubr report.
+01-056-0043,Too many for Lukashenko. No observers.
+01-057-0037,Too many for Lukashenko. No observers.
+01-057-0043,Too many for Lukashenko. No observers.
+01-050-0011,Too many for Lukashenko. No observers.
+01-060-0028,Too many for Lukashenko. High turnout. One observer.
+01-063-0049,Too many for Lukashenko. No observers.
+01-063-0015,Too many for Lukashenko. Zubr report.
+01-011-0078,Too many for Lukashenko. Conflict reported.
+02-014-0016,Too many for Lukashenko. No observers.
+02-014-0005,Too many for Lukashenko. High turnout. One observer.
+02-015-0040,Too many for Lukashenko. Zubr report.
+02-015-0045,Too many for Lukashenko. High turnout. One observer.
+02-016-0012,Too many for Lukashenko. No observers.
+02-016-0044,Too many for Lukashenko. Zubr report.
+02-016-0059,Too many for Lukashenko. One observer. Zubr report.
+02-065-0004,Too many for Lukashenko. Zubr report.
+02-067-0002,Too many for Lukashenko. Zubr report.
+02-067-0005,Too many for Lukashenko. One observer.
+02-067-0015,Too many for Lukashenko. No observers.
+02-068-0013,Too many for Lukashenko. No observers.
+02-069-0005,Too many for Lukashenko. Zubr report.
+02-074-0006,Too many for Lukashenko. Zubr report.
+02-074-0014,Too many for Lukashenko. Zubr report.
+02-073-0003,Too many for Lukashenko. Zubr report.
+02-075-0001,Too many for Lukashenko. Zubr report.
+02-076-0020,Too many for Lukashenko. One observer.
+02-076-0039,Too many for Lukashenko. High turnout. One observer.
+02-076-0040,Too many for Lukashenko. High turnout. One observer.
+02-077-0001,Too many for Lukashenko. Zubr report.
+02-077-0006,Too many for Lukashenko. One observer.
+02-078-0008,Too many for Lukashenko. High turnout. One observer.
+02-143-0009,Too many for Lukashenko. Zubr report.
+02-075-0013,Too many for Lukashenko. No observers.
+02-074-0023,Too many for Lukashenko. No observers.
+03-019-0019,Too many for Lukashenko. One observer.
+03-087-0009,Too many for Lukashenko. One observer.
+03-088-0027,Too many for Lukashenko. No observer.
+03-091-0001,Too many for Lukashenko. Zubr report.
+03-091-0005,Too many for Lukashenko. Conflict reported.
+03-091-0009,Too many for Lukashenko. One observer.
+03-091-0024,Too many for Lukashenko. Zubr report.
+03-091-0036,Too many for Lukashenko. No observer.
+03-091-0043,Too many for Lukashenko. No observers.
+03-096-0009,Too many for Lukashenko. No observers.
+03-096-0026,Too many for Lukashenko. No observers.
+03-096-0036,Too many for Lukashenko. High turnout. One observer.
+03-096-0045,Too many for Lukashenko. Zubr report.
+03-096-0058,Too many for Lukashenko. Zubr report.
+03-100-0009,Too many for Lukashenko. High turnout. One observer.
+03-100-0057,Too many for Lukashenko. High turnout. One observer.
+03-100-0014,Too many for Lukashenko. Zubr report. One observer.
 04-022-0097,Too many for Lukashenko. No report.
 04-021-0002,Too many for Lukashenko. Zubr report.
 04-021-0022,Too many for Lukashenko. High turnout. One observer.
@@ -91,15 +172,20 @@ id,non_trust_reason
 04-022-0106,Too many for Lukashenko. High turnout. One observer.
 04-022-0119,Too many for Lukashenko. High turnout. One observer.
 04-022-0120,Too many for Lukashenko. Zubr report.
+04-022-0123,Too many for Lukashenko. High turnout. One observer.
 04-022-0124,Too many for Lukashenko. High turnout. One observer.
 04-022-0130,Too many for Lukashenko. Zubr reports.
 04-022-0092,Too many for Lukashenko. Zubr report.
 04-022-0093,Too many for Lukashenko. Zubr report (see 0092).
 04-022-0094,Too many for Lukashenko. Zubr report (see 0092).
+04-106-0011,Too many for Lukashenko. Zubr report.
 04-106-0012,Too many for Lukashenko. Zubr report.
+04-112-0010,Too many for Lukashenko. One observer.
 04-112-0011,Too many for Lukashenko. Zubr report.
 04-112-0014,Too many for Lukashenko. Zubr report.
 04-112-0018,Too many for Lukashenko. Zubr report. One observer.
+04-112-0024,Too many for Lukashenko. One observer.
+04-112-0028,Too many for Lukashenko. One observer.
 04-112-0027,Too many for Lukashenko. Zubr report.
 04-110-0001,Too many for Lukashenko. No observers.
 04-112-0006,Too many for Lukashenko. Zubr report. One observer.
@@ -108,85 +194,33 @@ id,non_trust_reason
 04-112-0019,Too many for Lukashenko. No observers.
 04-112-0033,Too many for Lukashenko. Zubr report.
 04-112-0035,Too many for Lukashenko. Zubr report. One observer.
-04-118-0002,Too many for Lukashenko. No observers.
-04-118-0026,Too many for Lukashenko. High turnout. One observer.
+04-112-0036,Too many for Lukashenko. High turnout. One observer.
+04-112-0059,Too many for Lukashenko. No observers.
+04-112-0065,Too many for Lukashenko. High turnout. One observer.
+04-112-0070,Too many for Lukashenko. No observers.
+04-114-0001,Too many for Lukashenko. One observer.
 04-114-0003,Too many for Lukashenko. Zubr report.
 04-114-0018,Too many for Lukashenko. High turnout. One observer.
 04-114-0028,Too many for Lukashenko. Zubr report.
 04-118-0010,Too many for Lukashenko. Zubr report.
 04-118-0011,Too many for Lukashenko. Zubr report.
 04-118-0014,Too many for Lukashenko. Zubr report.
+04-118-0019,Too many for Lukashenko. Zubr report.
 04-118-0024,Too many for Lukashenko. Zubr report.
+04-118-0027,Too many for Lukashenko. One observer.
+04-118-0002,Too many for Lukashenko. No observers.
+04-118-0026,Too many for Lukashenko. High turnout. One observer.
+04-118-0027,Too many for Lukashenko. High turnout. One observer.
 04-119-0002,Too many for Lukashenko. High turnout. One observer.
+04-119-0007,Too many for Lukashenko. No observers.
 04-119-0017,Too many for Lukashenko. Zubr report.
 04-145-0001,Too many for Lukashenko. Zubr report.
+04-145-0002,Too many for Lukashenko. High turnout. One observer.
+04-145-0023,Too many for Lukashenko. One observer.
 04-122-0120,Too many for Lukashenko. Zubr report.
 04-022-0099,Too many for Lukashenko. Zubr report.
 04-022-0098,Too many for Lukashenko. Same school as 0099.
 04-022-0118,Too many for Lukashenko. Zubr report.
-01-010-0002,Too many for Lukashenko. Zubr report.
-01-010-0005,Too many for Lukashenko. Mess in Zubr data.
-01-010-0006,Too many for Lukashenko. Zubr report.
-01-010-0015,Too many for Lukashenko. Zubr report.
-01-010-0020,Too many for Lukashenko. Zubr report.
-01-010-0021,Too many for Lukashenko. Zubr report.
-01-010-0023,Too many for Lukashenko. No observers.
-01-010-0031,Too many for Lukashenko. Zubr report.
-01-010-0035,Too many for Lukashenko. Zubr report.
-01-010-0036,Too many for Lukashenko. Zubr report.
-01-010-0040,Too many for Lukashenko. No observers.
-01-010-0042,Too many for Lukashenko. Zubr report.
-01-011-0005,Too many for Lukashenko. Zubr report.
-01-011-0010,Too many for Lukashenko. Zubr report.
-01-011-0041,Too many for Lukashenko. Zubr report.
-01-011-0042,Too many for Lukashenko. Zubr report.
-01-011-0047,Too many for Lukashenko. Zubr report.
-01-010-0021,Too many for Lukashenko. Zubr report.
-01-011-0048,Too many for Lukashenko. Zubr report.
-01-011-0062,Too many for Lukashenko. Zubr report.
-01-011-0080,Too many for Lukashenko. Zubr report.
-01-054-0010,Too many for Lukashenko. Zubr report.
-01-055-0004,Too many for Lukashenko. Zubr report.
-01-056-0007,Too many for Lukashenko. Zubr report.
-01-056-0020,Too many for Lukashenko. Zubr report.
-01-056-0043,Too many for Lukashenko. No observers.
-01-057-0037,Too many for Lukashenko. No observers.
-01-057-0043,Too many for Lukashenko. No observers.
-01-050-0011,Too many for Lukashenko. No observers.
-01-063-0049,Too many for Lukashenko. No observers.
-01-063-0015,Too many for Lukashenko. Zubr report.
-01-011-0078,Too many for Lukashenko. Conflict reported.
-02-014-0016,Too many for Lukashenko. No observers.
-02-015-0040,Too many for Lukashenko. Zubr report.
-02-016-0012,Too many for Lukashenko. No observers.
-02-016-0044,Too many for Lukashenko. Zubr report.
-02-016-0059,Too many for Lukashenko. One observer. Zubr report.
-02-065-0004,Too many for Lukashenko. Zubr report.
-02-067-0002,Too many for Lukashenko. Zubr report.
-02-067-0015,Too many for Lukashenko. No observers.
-02-068-0013,Too many for Lukashenko. No observers.
-02-069-0005,Too many for Lukashenko. Zubr report.
-02-074-0006,Too many for Lukashenko. Zubr report.
-02-074-0014,Too many for Lukashenko. Zubr report.
-02-073-0003,Too many for Lukashenko. Zubr report.
-02-075-0001,Too many for Lukashenko. Zubr report.
-02-077-0001,Too many for Lukashenko. Zubr report.
-02-078-0008,Too many for Lukashenko. High turnout. One observer.
-02-143-0009,Too many for Lukashenko. Zubr report.
-02-075-0013,Too many for Lukashenko. No observers.
-02-074-0023,Too many for Lukashenko. No observers.
-03-019-0019,Too many for Lukashenko. One observer.
-03-091-0001,Too many for Lukashenko. Zubr report.
-03-091-0005,Too many for Lukashenko. Conflict reported.
-03-091-0009,Too many for Lukashenko. One observer.
-03-091-0024,Too many for Lukashenko. Zubr report.
-03-091-0043,Too many for Lukashenko. No observers.
-03-096-0009,Too many for Lukashenko. No observers.
-03-096-0026,Too many for Lukashenko. No observers.
-03-096-0045,Too many for Lukashenko. Zubr report.
-03-096-0058,Too many for Lukashenko. Zubr report.
-03-100-0009,Too many for Lukashenko. High turnout. One observer.
-03-100-0014,Too many for Lukashenko. Zubr report. One observer.
 05-026-0010,Too many for Lukashenko. Zubr report.
 05-026-0012,Too many for Lukashenko. Zubr report.
 05-026-0014,Too many for Lukashenko. Zubr report.
@@ -216,6 +250,7 @@ id,non_trust_reason
 05-036-0027,Too many for Lukashenko. Zubr report.
 05-036-0030,Too many for Lukashenko. Zubr report/No observers.
 05-036-0035,Too many for Lukashenko. Zubr report.
+05-036-0076,Too many for Lukashenko. One observer.
 05-038-0001,Too many for Lukashenko. Zubr report.
 05-038-0014,Too many for Lukashenko. Zubr report.
 05-038-0032,Too many for Lukashenko. Zubr report.
@@ -255,16 +290,22 @@ id,non_trust_reason
 05-141-0067,Too many for Lukashenko. Zubr report.
 05-141-0071,Too many for Lukashenko. Zubr report.
 05-141-0073,Too many for Lukashenko. Zubr report.
+05-141-0076,Too many for Lukashenko. Zubr report.
 05-141-0082,Too many for Lukashenko. Zubr report.
 05-141-0085,Too many for Lukashenko. Zubr report.
 05-141-0086,Too many for Lukashenko. Zubr report.
 05-141-0088,Too many for Lukashenko. Zubr report.
 05-141-0089,Too many for Lukashenko. Zubr report.
 05-141-0099,Too many for Lukashenko. Zubr report.
+05-141-0102,Too many for Lukashenko. High turnout. One observer.
+05-141-0106,Too many for Lukashenko. Zubr report.
 06-012-0056,Too many for Lukashenko. Conflict reported.
+06-012-0058,Too many for Lukashenko. High turnout. One observer.
 06-012-0085,Too many for Lukashenko. No observers.
 06-012-0067,Too many for Lukashenko. Zubr report.
 06-012-0080,Too many for Lukashenko. Zubr report.
+06-012-0082,Too many for Lukashenko. High turnout. One observer.
+06-012-0083,Too many for Lukashenko. High turnout. One observer.
 06-013-0010,Too many for Lukashenko. Zubr report.
 06-013-0014,Too many for Lukashenko. No observers.
 06-013-0038,Too many for Lukashenko. Zubr report.
@@ -280,6 +321,7 @@ id,non_trust_reason
 04-022-0074,Too many for Lukashenko. Zubr report.
 04-022-0075,Too many for Lukashenko. Zubr report.
 04-112-0054,Too many for Lukashenko. No observers.
+07-001-0061,Too many for Lukashenko. One observer.
 07-001-0064,Too many for Lukashenko. Zubr report. Conflict.
 07-001-0088,Too many for Lukashenko. Zubr report. Conflict.
 07-006-0005,Too many for Lukashenko. Zubr report.
@@ -351,6 +393,7 @@ id,non_trust_reason
 01-011-0066,"High turnout, many for Lukashenko. No zubr report."
 01-011-0088,"High turnout, many for Lukashenko. No zubr report."
 01-049-0006,"High turnout, many for Lukashenko. No zubr report."
+01-054-0005,"High turnout, many for Lukashenko. No zubr report."
 01-054-0009,"High turnout, many for Lukashenko. No zubr report."
 02-016-0056,"High turnout, many for Lukashenko. No zubr report."
 02-016-0071,"High turnout, many for Lukashenko. No zubr report."
@@ -361,7 +404,9 @@ id,non_trust_reason
 04-022-0095,"High turnout, many for Lukashenko. No zubr report."
 04-112-0023,"High turnout, many for Lukashenko. No zubr report."
 04-119-0011,"High turnout, many for Lukashenko. No zubr report."
+04-119-0019,"High turnout, many for Lukashenko. No zubr report."
 05-026-0017,"High turnout, many for Lukashenko. No zubr report."
 05-038-0003,"High turnout, many for Lukashenko. No zubr report."
+06-012-0084,"High turnout, many for Lukashenko. No zubr report."
 05-041-0011,"Trusted. High turnout, many for Lukashenko. No zubr report."
 05-041-0026,"Trusted. High turnout, many for Lukashenko. No zubr report."
