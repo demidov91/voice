@@ -40,7 +40,6 @@ id,reason
 06-135-0002,no-observer
 04-110-0013,one-observer
 04-145-0024,one-observer
-06-135-0020,one-observer
 07-003-0094,major-violation
 04-119-0029,major-violation
 01-010-0025,minor-violation
@@ -83,7 +82,6 @@ id,reason
 07-004-0007,outlier
 07-004-0026,outlier
 01-010-0010,outlier
-01-010-0011,outlier
 01-011-0049,outlier
 01-011-0079,outlier
 01-056-0017,outlier
@@ -93,7 +91,6 @@ id,reason
 02-015-0026,outlier
 02-143-0022,outlier
 02-075-0019,outlier
-02-075-0051,outlier
 03-101-0015,outlier
 03-091-0012,outlier
 03-091-0015,outlier
