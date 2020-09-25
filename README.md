@@ -1,9 +1,32 @@
 # Analyzing Voice2020 data.
 
 
-## Source data
+Reference:
+1. Source dara
+ * 1.1. voice.csv
+ * 1.2. geo-categorized.csv
+ * 1.3. zubr.csv
+2. Data preparation.
+ * 2.1 Registered count vs Photos count
+ * 2.2 Fix number of corrupted ballots
+3. Calculate coefficients
+ * 3.1 Tsikhanouskaya coefficients
+ * 3.2 Protest coefficients
+ * 3.3 Alternative candidates coefficients
+4. Clear data based on Zubr reports
+5. Turnout estimation
+6. Caclulate total 
+ * 6.1 Number of votes
+ * 6.2 Votes per candidates
+7. Results
 
-There are 2 sourcs datasets to analyze
+
+
+
+
+## 1. Source data
+
+There are 3 sourcs datasets to analyze
 
 
 ### geo-categorized.csv
@@ -18,8 +41,20 @@ Columns:
  * `town_over100` (one of 9 towns with population over 100.000)
  * `city` (one of 5 region centers)
  * `capital` (Minsk)
- * `embassy`
- * `suburb` (20 km around Minsk, 10 km around other region centers)
+ * `embassy` (poll stations abroad)
+ * `minsk_suburb` (20 km around Minsk)
+* `region`
+ * 1 - Brest region
+ * 2 - Viciebsk region
+ * 3 - Homel region
+ * 4 - Hrodna region
+ * 5 - Minsk region
+ * 6 - Mahiliou region
+ * 7 - Minsk
+ * 8 - Embassy
+ 
+#### How was it built?
+<details>TBD</details>
 
 ### voice.csv
 
@@ -35,16 +70,53 @@ Data from the Voice patform. Rows have the following key fields:
   * `cherechen` 
   * `against` (against evryone)
   * `corrupted` (ballot is corrupted by a voter)
-  
+
+#### How was it built?
+<details>TBD</details>
+
+
+### zubr.csv
+Data from zubr.in 
+* `id` - poll station unique identifier
+* `zubr_id` - internal poll station number for the zubr.in site
+* `observers` - number of observers for the poll station
+* `accreditation-reject` - here and further `True` or `False` for a specific type of violation on this poll station
+* `let-observer-in-violation`
+* `no-let-observer-in`
+* `observer-pushed-away`
+* `force-beforehand-voting`
+* `late-report`
+* `home-voting-violation`
+* `wrong-voters-number`
+* `no-medcine-on-poll-station`
+* `non-transparent-counting`
+* `observer-limitations`
+* `other`
+
+
+#### How was it built?
+<details>
+ TBD
  
+zubr-messages.csv
+zubr-violation-codes.csv
+zubr-observers.csv
+</details>
+
+
+## 2. Data preparation
+
+* Add geo_categorized.csv columns into voice.csv (join by `id`)
+* Take only those voice.csv rows where 
+ * Number of **registered** voices for each candidate is **more or equal** to the number of **official votes** for this candidate or
+ * ... there are **less than 10 registered** voices for a candidate
+* There are **668** poll stations left. Draw charts:
+
+
+
+
+
   
-## Preparing the data.
-
-* Number of **official** voters for each candidate should be **greater or the same** as the number of ballot **photos** in the Voice platform.
-* Any **outliers** explained by a Zubr report (rules violations) or poll station location (like hospital) should be removed (`outliers.csv`)
-* `corrupted_officialVotes` missing values are filled using `protest_coefficient` (explained below, `protest_coeffcients.csv`)
-
-List of **811 poll stations** with trusted results can be found in `trusted-for-alternative-fixed.csv` 
 
 ## Building coefficiets.
 After exploring the data following algorith was chosen:
