@@ -149,7 +149,7 @@ corrupted: 1.1 %
 
 
 ### By region:
-####Brest region:
+#### Brest region:
 
 **lukashenko: 47.9 %**
 
@@ -165,7 +165,7 @@ kanopatskaja: 1.5 %
 
 corrupted: 1.2 %
 
-####Viciebsk region
+#### Viciebsk region
 
 **lukashenko: 63.8 %**
 
@@ -181,27 +181,27 @@ kanopatskaja: 1.1 %
 
 corrupted: 0.8 %
 
-####Homel region
+#### Homel region
 
-**lukashenko: 61.5 %
+**lukashenko: 61.5 %**
 
-**tihanovkaja: 29.6 %
+**tihanovkaja: 29.6 %**
 
-**against: 4.3 %
+against: 4.3 %
 
-**dmitriyev: 1.4 %
+dmitriyev: 1.4 %
 
-**cherechen: 1.3 %
+cherechen: 1.3 %
 
-**kanopatskaja: 1.1 %
+kanopatskaja: 1.1 %
 
-**corrupted: 0.8 %
+corrupted: 0.8 %
 
-####Hrodna region
+#### Hrodna region
 
-**lukashenko: 43.2 %
+**lukashenko: 43.2 %**
 
-**tihanovkaja: 43.8 %
+**tihanovkaja: 43.8 %**
 
 against: 6.3 %
 
@@ -215,9 +215,9 @@ corrupted: 1.1 %
 
 #### Minsk region (without Minsk)
 
-**lukashenko: 51.8 %
+**lukashenko: 51.8 % **
 
-**tihanovkaja: 37.7 %
+**tihanovkaja: 37.7 %**
 
 against: 5.2 %
 
@@ -231,9 +231,9 @@ corrupted: 1.0 %
 
 #### Mahiliou
 
-**lukashenko: 66.5 %
+**lukashenko: 66.5 %**
 
-**tihanovkaja: 25.2 %
+**tihanovkaja: 25.2 %**
 
 against: 4.0 %
 
@@ -247,9 +247,9 @@ corrupted: 0.7 %
 
 #### Minsk
 
-**lukashenko: 20.7 %
+**lukashenko: 20.7 %**
 
-**tihanovkaja: 62.2 %
+**tihanovkaja: 62.2 %**
 
 against: 8.9 %
 
@@ -263,9 +263,9 @@ corrupted: 2.1 %
 
 #### Embassy
 
-**lukashenko: 49.9 %
+**lukashenko: 49.9 %**
 
-**tihanovkaja: 47.7 %
+**tihanovkaja: 47.7 %**
 
 against: 0.7 %
 
