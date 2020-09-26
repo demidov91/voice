@@ -108,8 +108,8 @@ zubr-observers.csv
 
 * Add geo_categorized.csv columns into voice.csv (join by `id`)
 * Take only those voice.csv rows where 
- * Number of **registered** voices for each candidate is **more or equal** to the number of **official votes** for this candidate or
- * ... there are **less than 10 registered** voices for a candidate
+  * Number of **registered** voices for each candidate is **more or equal** to the number of **official votes** for this candidate or
+  * ... there are **less than 10 registered** voices for a candidate
 * There are **668** poll stations left. Draw charts:
 
 
