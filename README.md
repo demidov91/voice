@@ -215,7 +215,7 @@ corrupted: 1.1 %
 
 #### Minsk region (without Minsk)
 
-**lukashenko: 51.8 % **
+**lukashenko: 51.8 %**
 
 **tihanovkaja: 37.7 %**
 
