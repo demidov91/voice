@@ -1,0 +1,13 @@
+code,reason
+0,accreditation-reject
+1,let-observer-in-violation
+2,no-let-observer-in
+3,observer-pushed-away
+4,force-beforehand-voting
+5,late-report
+6,home-voting-violation
+7,wrong-voters-number
+8,no-medcine-on-poll-station
+9,non-transparent-counting
+10,observer-limitations
+11,other

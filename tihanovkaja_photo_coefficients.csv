@@ -1,8 +1,9 @@
 area,coefficient
-city,2.577
-suburb,2.236
-capital,1.928
-village,3.303
-town_below100,3.634
-town_over100,3.167
-embassy,13.706
+city,3.621
+minsk_suburb,2.238
+minsk_village,4.043
+capital,2.557
+village,7.848
+town_below100,4.500
+town_over100,4.451
+embassy,12.062

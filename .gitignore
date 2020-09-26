@@ -1,1 +1,4 @@
 *.ipynb
+*.xlsx
+*.ods
+notebooks
