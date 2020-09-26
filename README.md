@@ -282,37 +282,6 @@ corrupted: 0.6 %
 ### By area
 
 <details>
-#### city
-
-**lukashenko: 41.1 %**
-
-**tihanovkaja: 44.0 %**
-
-against: 7.3 %
-
-dmitriyev: 2.5 %
-
-cherechen: 2.2 %
-
-kanopatskaja: 1.8 %
-
-corrupted: 1.2 %
-
-#### minsk_suburb
-
-**lukashenko: 34.6 %**
-
-**tihanovkaja: 56.4 %**
-
-against: 4.4 %
-
-dmitriyev: 1.5 %
-
-cherechen: 1.2 %
-
-kanopatskaja: 1.1 %
-
-corrupted: 0.9 %
 
 #### capital
 
@@ -330,31 +299,40 @@ kanopatskaja: 2.0 %
 
 corrupted: 2.1 %
 
-#### village
 
-lukashenko: 75.5 %
-tihanovkaja: 19.0 %
-against: 2.5 %
-dmitriyev: 0.9 %
-cherechen: 0.7 %
-kanopatskaja: 0.8 %
-corrupted: 0.6 %
+#### minsk_suburb
 
-town_below100
+**lukashenko: 34.6 %**
 
-**lukashenko: 50.6 %**
+**tihanovkaja: 56.4 %**
 
-**tihanovkaja: 37.7 %**
+against: 4.4 %
 
-against: 5.9 %
+dmitriyev: 1.5 %
 
-dmitriyev: 1.9 %
+cherechen: 1.2 %
 
-cherechen: 1.7 %
+kanopatskaja: 1.1 %
 
-kanopatskaja: 1.3 %
+corrupted: 0.9 %
 
-corrupted: 1.0 %
+
+#### city
+
+**lukashenko: 41.1 %**
+
+**tihanovkaja: 44.0 %**
+
+against: 7.3 %
+
+dmitriyev: 2.5 %
+
+cherechen: 2.2 %
+
+kanopatskaja: 1.8 %
+
+corrupted: 1.2 %
+
 
 #### town_over100
 
@@ -371,10 +349,44 @@ cherechen: 1.9 %
 kanopatskaja: 1.3 %
 
 corrupted: 1.3 %
+
+#### town_below100
+
+**lukashenko: 50.6 %**
+
+**tihanovkaja: 37.7 %**
+
+against: 5.9 %
+
+dmitriyev: 1.9 %
+
+cherechen: 1.7 %
+
+kanopatskaja: 1.3 %
+
+corrupted: 1.0 %
+
+
+#### village
+
+**lukashenko: 75.5 %**
+
+**tihanovkaja: 19.0 %**
+
+against: 2.5 %
+
+dmitriyev: 0.9 %
+
+cherechen: 0.7 %
+
+kanopatskaja: 0.8 %
+
+corrupted: 0.6 %
 </details>
 
 ### Major cities
 <details>
+
 #### Brest 
 
 **lukashenko: 30.1 %**
