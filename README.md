@@ -281,7 +281,7 @@ corrupted: 0.6 %
 
 #### city
 
-** lukashenko: 41.1 %**
+**lukashenko: 41.1 %**
 
 **tihanovkaja: 44.0 %**
 
@@ -372,93 +372,148 @@ corrupted: 1.3 %
 
 ### Major cities
 
-Brest 
+#### Brest 
 
-lukashenko: 30.1 %
-tihanovkaja: 49.8 %
+**lukashenko: 30.1 %**
+
+**tihanovkaja: 49.8 %**
+
 against: 9.8 %
+
 dmitriyev: 3.3 %
+
 cherechen: 3.0 %
+
 kanopatskaja: 2.4 %
+
 corrupted: 1.6 %
 
-Viciebsk
+#### Viciebsk
 
-lukashenko: 51.2 %
-tihanovkaja: 36.2 %
+**lukashenko: 51.2 %**
+
+**tihanovkaja: 36.2 %**
+
 against: 6.1 %
+
 dmitriyev: 2.1 %
+
 cherechen: 1.9 %
+
 kanopatskaja: 1.5 %
+
 corrupted: 1.0 %
 
-Homel
+#### Homel
 
-lukashenko: 41.9 %
-tihanovkaja: 44.9 %
+**lukashenko: 41.9 %**
+
+**tihanovkaja: 44.9 %**
+
 against: 6.4 %
+
 dmitriyev: 2.2 %
+
 cherechen: 2.0 %
+
 kanopatskaja: 1.6 %
+
 corrupted: 1.0 %
 
-Hrodna
+#### Hrodna
 
-lukashenko: 31.1 %
-tihanovkaja: 52.5 %
+**lukashenko: 31.1 %**
+
+**tihanovkaja: 52.5 %**
+
 against: 7.9 %
+
 dmitriyev: 2.7 %
+
 cherechen: 2.5 %
+
 kanopatskaja: 2.0 %
 
-Mahiliou
-
-lukashenko: 50.5 %
-tihanovkaja: 36.6 %
-against: 6.3 %
-dmitriyev: 2.1 %
-cherechen: 1.9 %
-kanopatskaja: 1.5 %
-corrupted: 1.0 %
-
-Lida
-
-lukashenko: 37.5 %
-tihanovkaja: 48.0 %
-against: 7.0 %
-dmitriyev: 2.3 %
-cherechen: 2.1 %
-kanopatskaja: 1.4 %
-corrupted: 1.6 %
-
-Baranavičy, Pinsk
-
-lukashenko: 40.3 %
-tihanovkaja: 46.7 %
-against: 6.3 %
-dmitriyev: 2.0 %
-cherechen: 1.9 %
-kanopatskaja: 1.3 %
 corrupted: 1.3 %
 
-Mazyr
+#### Mahiliou
 
-lukashenko: 48.4 %
-tihanovkaja: 39.9 %
+**lukashenko: 50.5 %**
+
+**tihanovkaja: 36.6 %**
+
+against: 6.3 %
+
+dmitriyev: 2.1 %
+
+cherechen: 1.9 %
+
+kanopatskaja: 1.5 %
+
+corrupted: 1.0 %
+
+#### Lida
+
+**lukashenko: 37.5 %**
+
+**tihanovkaja: 48.0 %**
+
+against: 7.0 %
+
+dmitriyev: 2.3 %
+
+cherechen: 2.1 %
+
+kanopatskaja: 1.4 %
+
+corrupted: 1.6 %
+
+#### Baranavičy, Pinsk
+
+**lukashenko: 40.3 %**
+
+**tihanovkaja: 46.7 %**
+
+against: 6.3 %
+
+dmitriyev: 2.0 %
+
+cherechen: 1.9 %
+
+kanopatskaja: 1.3 %
+
+corrupted: 1.3 %
+
+#### Mazyr
+
+**lukashenko: 48.4 %**
+
+**tihanovkaja: 39.9 %**
+
 against: 5.7 %
+
 dmitriyev: 1.9 %
+
 cherechen: 1.8 %
+
 kanopatskaja: 1.2 %
+
 corrupted: 1.2 %
 
-Babrujsk
+#### Babrujsk
 
-lukashenko: 50.1 %
-tihanovkaja: 38.7 %
+**lukashenko: 50.1 %**
+
+**tihanovkaja: 38.7 %**
+
 against: 5.5 %
+
 dmitriyev: 1.7 %
+
 cherechen: 1.7 %
+
 kanopatskaja: 1.1 %
+
 corrupted: 1.2 %
 
 
