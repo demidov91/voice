@@ -144,7 +144,7 @@ corrupted: 1.1 %
 
 | Lukashenko vs Tsikhanovskaya | Lukashenko vs other options |
 |---|---|
-|![plot1](images-3/true-map.png)|![plot2](images-3/luk-vs-rest.png)|
+|[![plot1](images-3/true-map.png)](geo/compete.geojson)|[![plot2](images-3/luk-vs-rest.png)](geo/against-lukashenko.geojson)|
 | [Interactive map](geo/compete.geojson) | [Interactive map](geo/against-lukashenko.geojson) |
 
 
@@ -279,37 +279,55 @@ corrupted: 0.6 %
 
 ### By area
 
-city
+#### city
 
-lukashenko: 41.1 %
-tihanovkaja: 44.0 %
+** lukashenko: 41.1 %**
+
+**tihanovkaja: 44.0 %**
+
 against: 7.3 %
+
 dmitriyev: 2.5 %
+
 cherechen: 2.2 %
+
 kanopatskaja: 1.8 %
+
 corrupted: 1.2 %
 
-minsk_suburb
+#### minsk_suburb
 
-lukashenko: 34.6 %
-tihanovkaja: 56.4 %
+**lukashenko: 34.6 %**
+
+**tihanovkaja: 56.4 %**
+
 against: 4.4 %
+
 dmitriyev: 1.5 %
+
 cherechen: 1.2 %
+
 kanopatskaja: 1.1 %
+
 corrupted: 0.9 %
 
-capital
+#### capital
 
-lukashenko: 20.5 %
-tihanovkaja: 62.3 %
+**lukashenko: 20.5 %**
+
+**tihanovkaja: 62.3 %**
+
 against: 9.0 %
+
 dmitriyev: 2.1 %
+
 cherechen: 2.0 %
+
 kanopatskaja: 2.0 %
+
 corrupted: 2.1 %
 
-village
+#### village
 
 lukashenko: 75.5 %
 tihanovkaja: 19.0 %
@@ -321,22 +339,34 @@ corrupted: 0.6 %
 
 town_below100
 
-lukashenko: 50.6 %
-tihanovkaja: 37.7 %
+**lukashenko: 50.6 %**
+
+**tihanovkaja: 37.7 %**
+
 against: 5.9 %
+
 dmitriyev: 1.9 %
+
 cherechen: 1.7 %
+
 kanopatskaja: 1.3 %
+
 corrupted: 1.0 %
 
-town_over100
+#### town_over100
 
-lukashenko: 44.6 %
-tihanovkaja: 42.5 %
+**lukashenko: 44.6 %**
+
+**tihanovkaja: 42.5 %**
+
 against: 6.3 %
+
 dmitriyev: 2.0 %
+
 cherechen: 1.9 %
+
 kanopatskaja: 1.3 %
+
 corrupted: 1.3 %
 
 
@@ -379,14 +409,7 @@ tihanovkaja: 52.5 %
 against: 7.9 %
 dmitriyev: 2.7 %
 cherechen: 2.5 %
-kanopatskaja: 2.0 %lukashenko: 50.5 %
-tihanovkaja: 36.6 %
-against: 6.3 %
-dmitriyev: 2.1 %
-cherechen: 1.9 %
-kanopatskaja: 1.5 %
-corrupted: 1.0 %
-corrupted: 1.3 %
+kanopatskaja: 2.0 %
 
 Mahiliou
 
