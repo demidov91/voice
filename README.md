@@ -38,7 +38,7 @@ Columns:
 * `area` - one of the following:
   * `village`
   * `town_below100` (towns with population less than 100.000 people)
-  * `town_over100` (one of 9 towns with population over 100.000)
+  * `town_over100` (towns with population over 100.000: Babrujsk, Baranavičy, Barysaŭ, Lida, Mazyr, Navapolack, Orša, Pinsk, Salihorsk)
   * `city` (one of 5 region centers)
   * `capital` (Minsk)
   * `embassy` (poll stations abroad)
@@ -139,16 +139,16 @@ kanopatskaja: 1.4 %
 
 corrupted: 1.1 %
 
-### On map:
+### On map (click for details):
 
 
 | Lukashenko vs Tsikhanovskaya | Lukashenko vs other options |
 |---|---|
 |[![plot1](images-3/true-map.png)](geo/compete.geojson)|[![plot2](images-3/luk-vs-rest.png)](geo/against-lukashenko.geojson)|
-| [Interactive map](geo/compete.geojson) | [Interactive map](geo/against-lukashenko.geojson) |
 
 
-### By region:
+### By region
+<details>
 #### Brest region:
 
 **lukashenko: 47.9 %**
@@ -276,9 +276,9 @@ cherechen: 0.3 %
 kanopatskaja: 0.4 %
 
 corrupted: 0.6 %
-
+</details>
 ### By area
-
+<details>
 #### city
 
 **lukashenko: 41.1 %**
@@ -368,10 +368,10 @@ cherechen: 1.9 %
 kanopatskaja: 1.3 %
 
 corrupted: 1.3 %
-
+</details>
 
 ### Major cities
-
+<details>
 #### Brest 
 
 **lukashenko: 30.1 %**
@@ -515,5 +515,5 @@ cherechen: 1.7 %
 kanopatskaja: 1.1 %
 
 corrupted: 1.2 %
-
+</details>
 
