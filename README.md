@@ -142,7 +142,7 @@ corrupted: 1.1 %
 
 | Lukashenko vs Tsikhanovskaya | Lukashenko vs other options |
 |---|---|
-|![plot1](images-3/raw-photo-tih.png)|![plot2](images-3/raw-registered-tih.png)|
+|![plot1](images-3/true-map.png)|![plot2](images-3/luk-vs-rest.png)|
 | [Interactive map](geo/compete.geojson) | [Interactive map](geo/against-lukashenko.geojson) |
 
 
