@@ -1,9 +1,32 @@
 # Analyzing Voice2020 data.
 
 
-## Source data
+Reference:
+1. Source dara
+ * 1.1. voice.csv
+ * 1.2. geo-categorized.csv
+ * 1.3. zubr.csv
+2. Data preparation.
+ * 2.1 Registered count vs Photos count
+ * 2.2 Fix number of corrupted ballots
+3. Calculate coefficients
+ * 3.1 Tsikhanouskaya coefficients
+ * 3.2 Protest coefficients
+ * 3.3 Alternative candidates coefficients
+4. Clear data based on Zubr reports
+5. Turnout estimation
+6. Caclulate total 
+ * 6.1 Number of votes
+ * 6.2 Votes per candidates
+7. Results
 
-There are 2 sourcs datasets to analyze
+
+
+
+
+## 1. Source data
+
+There are 3 sourcs datasets to analyze
 
 
 ### geo-categorized.csv
@@ -13,13 +36,25 @@ Columns:
 * `latitude`, `longitude` - poll station coordinates.
 * `town` - town/city/village where poll station is situated.
 * `area` - one of the following:
- * `village`
- * `town_below100` (towns with population less than 100.000 people)
- * `town_over100` (one of 9 towns with population over 100.000)
- * `city` (one of 5 region centers)
- * `capital` (Minsk)
- * `embassy`
- * `suburb` (20 km around Minsk, 10 km around other region centers)
+  * `village`
+  * `town_below100` (towns with population less than 100.000 people)
+  * `town_over100` (one of 9 towns with population over 100.000)
+  * `city` (one of 5 region centers)
+  * `capital` (Minsk)
+  * `embassy` (poll stations abroad)
+  * `minsk_suburb` (20 km around Minsk)
+* `region`
+  * 1 - Brest region
+  * 2 - Viciebsk region
+  * 3 - Homel region
+  * 4 - Hrodna region
+  * 5 - Minsk region
+  * 6 - Mahiliou region
+  * 7 - Minsk
+  * 8 - Embassy
+ 
+#### How was it built?
+<details>TBD</details>
 
 ### voice.csv
 
@@ -35,104 +70,334 @@ Data from the Voice patform. Rows have the following key fields:
   * `cherechen` 
   * `against` (against evryone)
   * `corrupted` (ballot is corrupted by a voter)
-  
+
+#### How was it built?
+<details>TBD</details>
+
+
+### zubr.csv
+Data from zubr.in 
+* `id` - poll station unique identifier
+* `zubr_id` - internal poll station number for the zubr.in site
+* `observers` - number of observers for the poll station
+* `accreditation-reject` - here and further `True` or `False` for a specific type of violation on this poll station
+* `let-observer-in-violation`
+* `no-let-observer-in`
+* `observer-pushed-away`
+* `force-beforehand-voting`
+* `late-report`
+* `home-voting-violation`
+* `wrong-voters-number`
+* `no-medcine-on-poll-station`
+* `non-transparent-counting`
+* `observer-limitations`
+* `other`
+
+
+#### How was it built?
+<details>
+ TBD
  
-  
-## Preparing the data.
+zubr-messages.csv
+zubr-violation-codes.csv
+zubr-observers.csv
+</details>
 
-* Number of **official** voters for each candidate should be **greater or the same** as the number of ballot **photos** in the Voice platform.
-* Any **outliers** explained by a Zubr report (rules violations) or poll station location (like hospital) should be removed (`outliers.csv`)
-* `corrupted_officialVotes` missing values are filled using `protest_coefficient` (explained below, `protest_coeffcients.csv`)
 
-List of **811 poll stations** with trusted results can be found in `trusted-for-alternative-fixed.csv` 
+## 2. Data preparation
 
-## Building coefficiets.
-After exploring the data following algorith was chosen:
-```
-Voice photos number -> Tsikhanouskaya estimated voters number
-
-Voice registered for anyone but Lukashenko -> Estimated total voters against Lukashenko (including Tsikhanouskaya) -> neither-Lukashenko-nor-Tsikhanouskaya voters
-
-```
-
-`Neither-Lukashenko-nor-Tsikhanouskaya` voters then distributed according to their distribution on trusted poll stations.
-
-Voice data to voters count is a linear regression `y=kx` with coefficient `k` calculated separately for each kind of `area`.
-
-Voice-to-Tsikhanouskaya coefficients can be found in `tihanovkaja_photo_coefficients.csv`
-Voice-to-AgainstLukashenko coefficients can be found in `protest_registered_coefficients.csv`
+* Add geo_categorized.csv columns into voice.csv (join by `id`)
+* Take only those voice.csv rows where 
+  * Number of **registered** voices for each candidate is **more or equal** to the number of **official votes** for this candidate...
+  * ... or there are **less than 10 registered** voices for a candidate
+* There are **668** poll stations left. Draw charts:
 
 |||
 |---|---|
-|![plot1](images/photo-tihanovkaja.png)|![plot2](images/registered-protest.png)|
+|![plot1](images-3/raw-photo-tih.png)|![plot2](images-3/raw-registered-tih.png)|
 
 
-|area|tihanovkaja_photo_coefficient|protest_registered_coefficient|
-|---|---|---|
-|capital|1.9|1.7|
-|city|2.6|2.1|
-|suburb|2.2|1.8|
-|town_over100|3.2|2.5|
-|town_below100|3.6|2.6|
-|village|3.3|2.6|
-|embassy|13.7|1.6|
 
-
-Protest-to-Candidate coefficients can be found in `alt_candidates_coefficients.csv`. Here are very approximate values for a quick refererence: 
-
-
-|candidate|plot|coefficient|top areas|
-|---|---|---|---|
-|against|![against](images/against.png)|0.46|region centers|
-|dmitriyev|![dmitriyev](images/dmitriyev.png)|0.16|suburb||
-|kanopatskaja|![against](images/kanopatskaja.png)|0.14|villages||
-|cherechen|![cherechen](images/cherechen.png)|0.13|big towns||
-|corrupted|![corrupted](images/corrupted.png)|0.1|embassies, Minsk||
-
-
-## Calculating results.
-
-There are 58 poll stations with missing Voice data which is 1% of total number. They are just ignored.
-
-### candidates-by-poll-station.csv
-
-* `id` - poll station unique identifier.
-* `area` - kind of area (see **geo-categorized.csv**)
-* `source` - one of:
-  * `official` - numbers from official report
-  * `official-corrupted-fix` - numbers from official report with estimated number for the `corrupted` column (it's often missed)
-  * `estimated` - estimated number based on coefficients described above.
-* `tihanovkaja`, `cherechen`,	`dmitriyev`,	`kanopatskaja`, `against`, `corrupted` - official or estimated number of votes for the candidate
-* `latitude`, `longitude` - coordinates
-
-### candidates-total.csv
-
-Absolute values for votes for each alternative candidate:
-
-|candidate|estimated_total|
-|---|---:|
-|tihanovkaja|1429689|
-|against|277079|
-|dmitriyev|83716|
-|kanopatskaja|78070|
-|cherechen|74509|
-|corrupted|53872|
 
 ## Estimated final results.
 
-Turnout should be estimated separately after analyzis of Zubr data. After finding out turnout for each area/region trustworthy relative resuts per each poll station can be obtained. But **so far** considering 75% turnout through the country (vs 84% officially) and 60% turnout in Minsk (vs 67% officially):
+### Total:
 
-**Lukashenko - 61.5%** (26% in Minsk)
+**lukashenko: 50.0 %**
 
-**Tsikhanouskaya - 27.5%** (53% in Minsk)
+**tihanovkaja: 38.5 %**
 
-Against everyone - 5.5% (10% in Minsk)
+against: 5.7 %
 
-Dmitriyev - 1.6% (2.7% in Minsk)
+dmitriyev: 1.8 %
 
-Kanopatskaja - 1.5% (3.2% in Minsk)
+cherechen: 1.6 %
 
-Cherechen - 1.4% (2.5% in Minsk)
+kanopatskaja: 1.4 %
 
-Corrupted ballots - 1% (2.7% in Minsk)
+corrupted: 1.1 %
+
+### On map:
+
+
+| Lukashenko vs Tsikhanovskaya | Lukashenko vs other options |
+|---|---|
+|![plot1](images-3/raw-photo-tih.png)|![plot2](images-3/raw-registered-tih.png)|
+| [Interactive map](geo/compete.geojson) | [Interactive map](geo/against-lukashenko.geojson) |
+
+
+### By region:
+**Brest region:**
+
+**lukashenko: 47.9 %**
+
+**tihanovkaja: 39.3 %**
+
+against: 6.2 %
+
+dmitriyev: 2.1 %
+
+cherechen: 1.9 %
+
+kanopatskaja: 1.5 %
+
+corrupted: 1.2 %
+
+**Viciebsk region**
+
+**lukashenko: 63.8 %**
+
+**tihanovkaja: 26.8 %**
+
+against: 4.5 %
+
+dmitriyev: 1.5 %
+
+cherechen: 1.4 %
+
+kanopatskaja: 1.1 %
+
+corrupted: 0.8 %
+
+Homel
+
+lukashenko: 61.5 %
+tihanovkaja: 29.6 %
+against: 4.3 %
+dmitriyev: 1.4 %
+cherechen: 1.3 %
+kanopatskaja: 1.1 %
+corrupted: 0.8 %
+
+Hrodna
+
+lukashenko: 43.2 %
+tihanovkaja: 43.8 %
+against: 6.3 %
+dmitriyev: 2.1 %
+cherechen: 1.9 %
+kanopatskaja: 1.5 %
+corrupted: 1.1 %
+
+Minsk region
+
+lukashenko: 51.8 %
+tihanovkaja: 37.7 %
+against: 5.2 %
+dmitriyev: 1.7 %
+cherechen: 1.4 %
+kanopatskaja: 1.2 %
+corrupted: 1.0 %
+
+Mahiliou
+
+lukashenko: 66.5 %
+tihanovkaja: 25.2 %
+against: 4.0 %
+dmitriyev: 1.3 %
+cherechen: 1.2 %
+kanopatskaja: 0.9 %
+corrupted: 0.7 %
+
+Minsk
+
+lukashenko: 20.7 %
+tihanovkaja: 62.2 %
+against: 8.9 %
+dmitriyev: 2.1 %
+cherechen: 2.0 %
+kanopatskaja: 2.0 %
+corrupted: 2.1 %
+
+Embassy
+
+lukashenko: 49.9 %
+tihanovkaja: 47.7 %
+against: 0.7 %
+dmitriyev: 0.4 %
+cherechen: 0.3 %
+kanopatskaja: 0.4 %
+corrupted: 0.6 %
+
+### By area
+
+city
+
+lukashenko: 41.1 %
+tihanovkaja: 44.0 %
+against: 7.3 %
+dmitriyev: 2.5 %
+cherechen: 2.2 %
+kanopatskaja: 1.8 %
+corrupted: 1.2 %
+
+minsk_suburb
+
+lukashenko: 34.6 %
+tihanovkaja: 56.4 %
+against: 4.4 %
+dmitriyev: 1.5 %
+cherechen: 1.2 %
+kanopatskaja: 1.1 %
+corrupted: 0.9 %
+
+capital
+
+lukashenko: 20.5 %
+tihanovkaja: 62.3 %
+against: 9.0 %
+dmitriyev: 2.1 %
+cherechen: 2.0 %
+kanopatskaja: 2.0 %
+corrupted: 2.1 %
+
+village
+
+lukashenko: 75.5 %
+tihanovkaja: 19.0 %
+against: 2.5 %
+dmitriyev: 0.9 %
+cherechen: 0.7 %
+kanopatskaja: 0.8 %
+corrupted: 0.6 %
+
+town_below100
+
+lukashenko: 50.6 %
+tihanovkaja: 37.7 %
+against: 5.9 %
+dmitriyev: 1.9 %
+cherechen: 1.7 %
+kanopatskaja: 1.3 %
+corrupted: 1.0 %
+
+town_over100
+
+lukashenko: 44.6 %
+tihanovkaja: 42.5 %
+against: 6.3 %
+dmitriyev: 2.0 %
+cherechen: 1.9 %
+kanopatskaja: 1.3 %
+corrupted: 1.3 %
+
+
+### Major cities
+
+Brest 
+
+lukashenko: 30.1 %
+tihanovkaja: 49.8 %
+against: 9.8 %
+dmitriyev: 3.3 %
+cherechen: 3.0 %
+kanopatskaja: 2.4 %
+corrupted: 1.6 %
+
+Viciebsk
+
+lukashenko: 51.2 %
+tihanovkaja: 36.2 %
+against: 6.1 %
+dmitriyev: 2.1 %
+cherechen: 1.9 %
+kanopatskaja: 1.5 %
+corrupted: 1.0 %
+
+Homel
+
+lukashenko: 41.9 %
+tihanovkaja: 44.9 %
+against: 6.4 %
+dmitriyev: 2.2 %
+cherechen: 2.0 %
+kanopatskaja: 1.6 %
+corrupted: 1.0 %
+
+Hrodna
+
+lukashenko: 31.1 %
+tihanovkaja: 52.5 %
+against: 7.9 %
+dmitriyev: 2.7 %
+cherechen: 2.5 %
+kanopatskaja: 2.0 %lukashenko: 50.5 %
+tihanovkaja: 36.6 %
+against: 6.3 %
+dmitriyev: 2.1 %
+cherechen: 1.9 %
+kanopatskaja: 1.5 %
+corrupted: 1.0 %
+corrupted: 1.3 %
+
+Mahiliou
+
+lukashenko: 50.5 %
+tihanovkaja: 36.6 %
+against: 6.3 %
+dmitriyev: 2.1 %
+cherechen: 1.9 %
+kanopatskaja: 1.5 %
+corrupted: 1.0 %
+
+Lida
+
+lukashenko: 37.5 %
+tihanovkaja: 48.0 %
+against: 7.0 %
+dmitriyev: 2.3 %
+cherechen: 2.1 %
+kanopatskaja: 1.4 %
+corrupted: 1.6 %
+
+Baranavičy, Pinsk
+
+lukashenko: 40.3 %
+tihanovkaja: 46.7 %
+against: 6.3 %
+dmitriyev: 2.0 %
+cherechen: 1.9 %
+kanopatskaja: 1.3 %
+corrupted: 1.3 %
+
+Mazyr
+
+lukashenko: 48.4 %
+tihanovkaja: 39.9 %
+against: 5.7 %
+dmitriyev: 1.9 %
+cherechen: 1.8 %
+kanopatskaja: 1.2 %
+corrupted: 1.2 %
+
+Babrujsk
+
+lukashenko: 50.1 %
+tihanovkaja: 38.7 %
+against: 5.5 %
+dmitriyev: 1.7 %
+cherechen: 1.7 %
+kanopatskaja: 1.1 %
+corrupted: 1.2 %
+
 
