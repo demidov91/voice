@@ -142,14 +142,15 @@ corrupted: 1.1 %
 ### On map (click for details):
 
 
-| Lukashenko vs Tsikhanovskaya | Lukashenko vs other options |
+| [Lukashenko vs Tsikhanovskaya](geo/compete.geojson) | [Lukashenko vs other options](geo/against-lukashenko.geojson) |
 |---|---|
 |[![plot1](images-3/true-map.png)](geo/compete.geojson)|[![plot2](images-3/luk-vs-rest.png)](geo/against-lukashenko.geojson)|
 
 
 ### By region
 <details>
-#### Brest region:
+
+#### Brest region
 
 **lukashenko: 47.9 %**
 
@@ -229,7 +230,7 @@ kanopatskaja: 1.2 %
 
 corrupted: 1.0 %
 
-#### Mahiliou
+#### Mahiliou region
 
 **lukashenko: 66.5 %**
 
