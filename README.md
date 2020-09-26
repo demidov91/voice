@@ -277,7 +277,9 @@ kanopatskaja: 0.4 %
 
 corrupted: 0.6 %
 </details>
+
 ### By area
+
 <details>
 #### city
 
@@ -468,21 +470,39 @@ kanopatskaja: 1.4 %
 
 corrupted: 1.6 %
 
-#### Baranavičy, Pinsk
+#### Baranavičy
 
-**lukashenko: 40.3 %**
+**lukashenko: 32.2 %**
 
-**tihanovkaja: 46.7 %**
+**tihanovkaja: 53.2 %**
 
-against: 6.3 %
+against: 7.1 %
 
-dmitriyev: 2.0 %
+dmitriyev: 2.3 %
 
-cherechen: 1.9 %
+cherechen: 2.2 %
 
-kanopatskaja: 1.3 %
+kanopatskaja: 1.5 %
 
-corrupted: 1.3 %
+corrupted: 1.5 %
+
+
+#### Pinsk
+
+**lukashenko: 50.6 %**
+
+**tihanovkaja: 38.5 %**
+
+against: 5.4 %
+
+dmitriyev: 1.7 %
+
+cherechen: 1.6 %
+
+kanopatskaja: 1.1 %
+
+corrupted: 1.1 %
+
 
 #### Mazyr
 
