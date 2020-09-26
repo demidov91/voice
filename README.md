@@ -137,6 +137,14 @@ kanopatskaja: 1.4 %
 
 corrupted: 1.1 %
 
+### On map:
+
+
+| Lukashenko vs Tsikhanovskaya | Lukashenko vs other options |
+|---|---|
+|![plot1](images-3/raw-photo-tih.png)|![plot2](images-3/raw-registered-tih.png)|
+| [Interactive map](geo/compete.geojson) | [Interactive map](geo/against-lukashenko.geojson) |
+
 
 ### By region:
 **Brest region:**
