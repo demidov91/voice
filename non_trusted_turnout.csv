@@ -20,7 +20,6 @@ id,reason
 01-060-0059,no-observer
 01-062-0009,no-observer
 01-053-0021,no-observer
-01-142-0002,no-observer
 02-072-0020,no-observer
 03-101-0011,no-observer
 03-085-0009,no-observer
@@ -47,7 +46,6 @@ id,reason
 01-010-0034,minor-violation
 01-011-0038,minor-violation
 01-011-0015,minor-violation
-01-010-0012,minor-violation
 01-049-0013,minor-violation
 01-056-0005,minor-violation
 02-143-0019,minor-violation
@@ -83,12 +81,10 @@ id,reason
 07-004-0026,outlier
 01-010-0010,outlier
 01-011-0049,outlier
-01-011-0079,outlier
 01-056-0017,outlier
 01-049-0030,outlier
 02-143-0016,outlier
 02-015-0001,outlier
-02-015-0026,outlier
 02-143-0022,outlier
 02-075-0019,outlier
 03-101-0015,outlier
@@ -99,14 +95,13 @@ id,reason
 03-102-0003,outlier
 04-112-0029,outlier
 04-021-0044,outlier
-04-022-0134,outlier
 04-117-0014,outlier
 04-112-0044,outlier
 04-112-0025,outlier
 04-112-0007,outlier
 04-112-0026,outlier
-04-145-0019,outlier
-04-021-0023,outlier
+04-021-0008,outlier
+04-022-0128,outlier
 05-039-0012,outlier
 05-027-0023,outlier
 05-042-0056,outlier
@@ -114,5 +109,4 @@ id,reason
 05-141-0100,outlier
 05-141-0101,outlier
 06-024-0010,outlier
-06-146-0024,outlier
 06-135-0025,outlier
