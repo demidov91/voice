@@ -7,8 +7,9 @@ Reference:
  * 1.2. geo-categorized.csv
  * 1.3. zubr.csv
 2. Data preparation.
- * 2.1 Registered count vs Photos count
- * 2.2 Fix number of corrupted ballots
+ * 2.1 Build common dataset
+ * 2.2 Correlation
+ * 2.3 Fix number of corrupted ballots
 3. Calculate coefficients
  * 3.1 Tsikhanouskaya coefficients
  * 3.2 Protest coefficients
@@ -117,7 +118,24 @@ Data was retrieved from `zubr.in` as 3 datasets:
 
 ### 2.1 Build common dataset
 
-### Join data
+#### First filtering
+
+Take only those `voice.csv` rows where number of **registered** Voice users for **each candidate** is **more or equal** to the number of **official votes** for this candidate **or** there are **less than 10 registered** Voice users for this candidate.
+
+Examples (*registered/official votes*):
+
+| Tsikhanouskaya | Against | Dmitriyeu | Lukashenko | Can we take it? |
+|:---:|:---:|:---:|:---:|:---|
+|68 / 170|20 / 95|12 / 32|1 / 142| **Yes** |
+|68 / 170|20 / 95|8 / 9|1 / 142| **Yes** |
+|68 / 170|20 / 95|**8 / 7**|1 / 142| **Yes** `7 < 8`, but `7 < 10` |
+|**68 / 39**|20 / 95|12 / 32|1 / 142| **No** `68 < 39` |
+|68 / 170|20 / 95|**12 / 7**|1 / 142| **No** `7 < 12` |
+
+Result is here: [tusted_by_voice.csv](tusted_by_voice.csv)
+
+
+#### Join data
 
 * Add `geo_categorized.csv` columns into voice.csv (join by `id`)
 * Add `zubr.csv` columns into voice.csv (join by `id`)
@@ -138,34 +156,36 @@ Data was retrieved from `zubr.in` as 3 datasets:
 * Notice that `zubr.csv` has also introduced `wrong-voters-number`, `observers` and `zubr_id` columns. `no-medcine-on-poll-station` is ignored as not relevant to our aims.
 
 
-### First filtering
-
-Take only those voice.csv rows where number of **registered** Voice users for **each candidate** is **more or equal** to the number of **official votes** for this candidate **or** there are **less than 10 registered** Voice users for this candidate.
-
-Examples (*registered/official votes*):
-
-| Tsikhanouskaya | Against | Dmitriyeu | Lukashenko | Can we take it? |
-|:---:|:---:|:---:|:---:|:---|
-|68 / 170|20 / 95|12 / 32|1 / 142| **Yes** |
-|68 / 170|20 / 95|8 / 9|1 / 142| **Yes** |
-|68 / 170|20 / 95|**8 / 7**|1 / 142| **Yes** `7 < 8`, but `7 < 10` |
-|**68 / 39**|20 / 95|12 / 32|1 / 142| **No** `68 < 39` |
-|68 / 170|20 / 95|**12 / 7**|1 / 142| **No** `7 < 12` |
-
-
   
 ### 2.2 Correlation
 
-There are **668** poll stations left. Let's draw charts and calculate correlation coefficient:
+There are **667** poll stations left. Let's draw some charts and calculate correlation coefficient:
 
-|||
+#### Votes for Tsikhanouskaya. X-axis - data according to *Voice*, Y-axis - official data:
+
+|  |By registration|By photo|
+|---|---|---|
+|People voted for Tsikhanoukaja|![](images-3/correlation/tihanovkaja-registered.png)|![](images-3/correlation/tihanovkaja-photo.png)|
+|`Tsikhanouskaya votes` / `Total votes`|![](images-3/correlation/tihanovkaja-registered-votes-part.png)|![](images-3/correlation/tihanovkaja-photo-votes-part.png)|
+|`Tsikhanouskaya votes` / `Total voters`|![](images-3/correlation/tihanovkaja-registered-voters-part.png)|![](images-3/correlation/tihanovkaja-photo-voters-part.png)|
+
+As we see `registration` data tends to give more robust resluts than `photo` data. **Absolute** data is more reliable comparing to **relative** numbers.
+
+#### Votes against Lukashenko:
+
+|By registration|By photo|
 |---|---|
-|![plot1](images-3/raw-photo-tih.png)|![plot2](images-3/raw-registered-tih.png)|
+|![](images-3/correlation/protest-registered.png)|![](images-3/correlation/protest-photo.png)|
 
 
 
 ### 2.3 Fix number of corrupted ballots
- 
+
+Number of corrupted ballots is filled on another blank than the rest of official data. So, this data is not quite consistent across poll stations. It should be manually cleaned up.
+
+<details>
+TBD
+</details>
 
 
 ## 3-6 TBD
