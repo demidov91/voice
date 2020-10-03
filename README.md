@@ -181,7 +181,7 @@ As we see `registration` data tends to give more robust resluts than `photo` dat
 
 ### 2.3 Fix number of corrupted ballots
 
-Number of corrupted ballots is filled on another blank than the rest of official data. So, this data is not quite consistent across poll stations. It should be manually cleaned up.
+Number of corrupted ballots is filled on another blank than the rest of official data. So, this data was often missed and not quite consistent across poll stations. It should be manually cleaned up.
 
 <details>
 TBD
