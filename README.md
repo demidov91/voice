@@ -96,25 +96,76 @@ Data from zubr.in
 
 #### How was it built?
 <details>
- TBD
+Data was retrieved from `zubr.in` as 3 datasets:
  
-zubr-messages.csv
-zubr-violation-codes.csv
-zubr-observers.csv
+* `zubr-violation-codes.csv`
+ * `code` - integer code
+ * `reason` - text explanation for this violation type
+ 
+* `zubr-messages.json`
+    Poll station as key, array of integer codes (see above) for violations on this poll station.
+
+* `zubr-observers.csv`
+ * `id`- poll station unique identifier
+ * `zubr_id` - poll station identifier on `zubr.in`
+ * `observers`- number of observers on the poll station. Integer >= 0
+
 </details>
 
 
 ## 2. Data preparation
 
-* Add geo_categorized.csv columns into voice.csv (join by `id`)
-* Take only those voice.csv rows where 
-  * Number of **registered** voices for each candidate is **more or equal** to the number of **official votes** for this candidate...
-  * ... or there are **less than 10 registered** voices for a candidate
-* There are **668** poll stations left. Draw charts:
+### 2.1 Build common dataset
+
+### Join data
+
+* Add `geo_categorized.csv` columns into voice.csv (join by `id`)
+* Add `zubr.csv` columns into voice.csv (join by `id`)
+* Replace following columns with a single `major-violations`:
+  * `late-report`
+  * `non-transparent-counting`
+* Replace following columns with a single `minor-violations`:
+  * `accreditation-reject` 
+  * `let-observer-in-violation`
+  * `no-let-observer-in`
+  * `observer-pushed-away`
+  * `force-beforehand-voting` 
+  * `home-voting-violation`
+  * `wrong-voters-number` 
+  * `observer-limitations`
+  * `other`
+
+* Notice that `zubr.csv` has also introduced `wrong-voters-number`, `observers` and `zubr_id` columns. `no-medcine-on-poll-station` is ignored as not relevant to our aims.
+
+
+### First filtering
+
+Take only those voice.csv rows where number of **registered** Voice users for **each candidate** is **more or equal** to the number of **official votes** for this candidate **or** there are **less than 10 registered** Voice users for this candidate.
+
+Examples (*registered/official votes*):
+
+| Tsikhanouskaya | Against | Dmitriyeu | Lukashenko | Can we take it? |
+|:---:|:---:|:---:|:---:|:---|
+|68 / 170|20 / 95|12 / 32|1 / 142| **Yes** |
+|68 / 170|20 / 95|8 / 9|1 / 142| **Yes** |
+|68 / 170|20 / 95|**8 / 7**|1 / 142| **Yes** `7 < 8`, but `7 < 10` |
+|**68 / 39**|20 / 95|12 / 32|1 / 142| **No** `68 < 39` |
+|68 / 170|20 / 95|**12 / 7**|1 / 142| **No** `7 < 12` |
+
+
+  
+### 2.2 Correlation
+
+There are **668** poll stations left. Let's draw charts and calculate correlation coefficient:
 
 |||
 |---|---|
 |![plot1](images-3/raw-photo-tih.png)|![plot2](images-3/raw-registered-tih.png)|
+
+
+
+### 2.3 Fix number of corrupted ballots
+ 
 
 
 ## 3-6 TBD
