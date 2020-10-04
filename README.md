@@ -10,18 +10,15 @@ Reference:
  * 2.1 Build common dataset
  * 2.2 Correlation
  * 2.3 Fix number of corrupted ballots
-3. Calculate coefficients
- * 3.1 Tsikhanouskaya coefficients
- * 3.2 Protest coefficients
- * 3.3 Alternative candidates coefficients
-4. Clear data based on Zubr reports
+3. Clear data based on Zubr reports
+4. Calculate coefficients
+ * 4.1 For Tsikhanouskaya and against Lukashenko
+ * 4.2 Alternative candidates coefficients
 5. Turnout estimation
 6. Caclulate total 
  * 6.1 Number of votes
  * 6.2 Votes per candidates
 7. Results
-
-
 
 
 
@@ -178,25 +175,15 @@ As we see `registration` data tends to give more robust resluts than `photo` dat
 |![](images-3/correlation/protest-registered.png)|![](images-3/correlation/protest-photo.png)|
 
 
-
-### 2.3 Fix number of corrupted ballots
-
-Number of corrupted ballots is filled on another blank than the rest of official data. So, this data was often missed and not quite consistent across poll stations. It should be manually cleaned up.
-
-<details>
-TBD
-</details>
+## 3. Clear data based on Zubr reports
 
 
-
-## 3. Calculate coefficients
-
-Further plan is to
+### 3.1 The plan
 * Estimate real votes **against Lukashenko** as `y=kx` where 
   * `x` is a number of people registered in *Voice* on **each poll station** 
   * `k` is a linear coefficient to find with *least squares* method for different *areas* and *regions*. Notice that there is no intercept parameter `b` to make model as simple and understadable as possible.
-* Estimate real **turnout** as an average for `area` and `region`. That is enough to estimate percent of Lukashenko voters.
-* Estimate poll station **size** (voters count) for those poll stations which are missing in *Zubr* reports. 
+* Estimate real **turnout** as an average for `area` and `region`. 
+* Estimate poll station **size** (voters count) for those poll stations which are missing in *Zubr* reports. That is enough to estimate percent of Lukashenko voters.
 * Estimate real votes for **Tsikhanouskaya** as `y=kx` where 
   * `x` is a number of people registered in *Voice* to vote for her on each poll station
   * `k` is a linear coefficient to find with *least squares* method for different *areas* and *regions*
@@ -204,19 +191,61 @@ Further plan is to
   * `p_all` - estimated votes against Lukashenko
   * `p_tsikhanouskaya` - estimated votes for Tsikhanouskaya
   * `k` - *average* coefficient for each alternative candidate calculated for different *areas* and *regions*
+
+### 3.2 Charts 
+It was done iterativly: analyze and remove outliers, calculate coefficient for *area-region* pair, repeat. Below are charts with non-trusted poll stations marked. Only **278 poll stations** was left as trusted in terms of the number of votes against Lukashenko (for any candidate). Notice that some of them were not trusted when estimating turnout (see *chapter 5*).
+
+<details>
+TBD
+</details>
+
+Outliers: [outliers.csv](outliers.csv)
+Dataset after removing outliers: [trusted-for-alternative.csv](trusted-for-alternative.csv)
+
+### 3.3 Fix number of corrupted ballots
+
+Number of corrupted ballots is filled on another blank than the rest of official data. So, this data was often missed and not quite consistent across poll stations. It should be manually cleaned up.
+
+<details>
+TBD
+</details>
+
+Resulting dataset: [trusted-for-alternative-fixed.csv](trusted-for-alternative-fixed.csv)
+
   
-**Notice** that all further coefficients are calculated **after very extensive removal of outliers** described in *part 4*. Only **278 poll stations** are left as trusted. 
- 
-### 3.1 Tsikhanouskaya coefficients
-TBD
+## 4. Calculate coefficients
 
-### 3.2 Protest coefficients
-TBD
+### 4.1 For Tsikhanouskaya and against Lukashenko 
 
-### 3.3 Alternative candidates coefficients
-TBD
+After clearing the data we got this distribution:
 
-## 4. Clear data based on Zubr reports
+|X-axis|For Tsikhanouskaya|Against Lukashenko|
+|---|---|---|
+|Registered on *Voice*|![](images-3/correlation/tihanovkaja-registered-cleared.png)|![](images-3/correlation/protest-registered-cleared.png)|
+|Ballot photos|![](images-3/correlation/tihanovkaja-photo-cleared.png)|![](images-3/correlation/protest-photo-cleared.png)|
+
+Town and city data is less correlated than overall distribution but it can be improved when observing only one *region* for a particular *area* or using *region* instead of *area*.
+
+Here are resulting datasets: [protest_registered_coefficients.csv](protest_registered_coefficients.csv), [tihanovkaja_registered_coefficients.csv](tihanovkaja_registered_coefficients.csv)
+
+Columns:
+* `area` - (see `geo_categorized.csv` above)
+* `region` - (see `geo_categorized.csv` above)
+* `coefficient` - calculated linear coefficient `k` previously described in `chapter 3`
+* `correlation` - correlation for data from this `source` (see next column)
+* `source` - what distribution this `coefficient` was calculated for:
+  * `area-region` - this *area* in this *region*
+  * `area` - all poll stations in this *area*
+  * `region` - all poll stations in this *region* 
+  * `total` - total distribution **except** Minsk, Minsk suburb and embassies.
+  
+Distribution (`source`) with the highest `correlation` was chosen for each `area`/`region` pair. 
+
+<details>
+TBD: tables and charts 
+</details> 
+
+### 4.2 Alternative candidates coefficients
 TBD
 
 ## 5. Turnout estimation
