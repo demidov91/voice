@@ -159,7 +159,7 @@ Result is here: [tusted_by_voice.csv](tusted_by_voice.csv)
   
 ### 2.2 Correlation
 
-There are **667** poll stations left. Let's draw some charts and calculate correlation coefficient:
+There are **667** poll stations left. Let's draw some charts and calculate [correlation coefficient](https://en.wikipedia.org/wiki/Correlation_coefficient):
 
 #### Votes for Tsikhanouskaya. X-axis - data according to *Voice*, Y-axis - official data:
 
@@ -191,6 +191,22 @@ TBD
 
 ## 3. Calculate coefficients
 
+Further plan is to
+* Estimate real votes **against Lukashenko** as `y=kx` where 
+  * `x` is a number of people registered in *Voice* on **each poll station** 
+  * `k` is a linear coefficient to find with *least squares* method for different *areas* and *regions*. Notice that there is no intercept parameter `b` to make model as simple and understadable as possible.
+* Estimate real **turnout** as an average for `area` and `region`. That is enough to estimate percent of Lukashenko voters.
+* Estimate poll station **size** (voters count) for those poll stations which are missing in *Zubr* reports. 
+* Estimate real votes for **Tsikhanouskaya** as `y=kx` where 
+  * `x` is a number of people registered in *Voice* to vote for her on each poll station
+  * `k` is a linear coefficient to find with *least squares* method for different *areas* and *regions*
+* Estimate real votes for **other candidates**, **against** all candidates and **corrupted** ballots as a part of *neither Tsikhanouskaya nor Lukashenko* votes. `y = k(p_all - p_tsikhanouskaya)` where
+  * `p_all` - estimated votes against Lukashenko
+  * `p_tsikhanouskaya` - estimated votes for Tsikhanouskaya
+  * `k` - *average* coefficient for each alternative candidate calculated for different *areas* and *regions*
+  
+**Notice** that all further coefficients are calculated **after very extensive removal of outliers** described in *part 4*. Only **278 poll stations** are left as trusted. 
+ 
 ### 3.1 Tsikhanouskaya coefficients
 TBD
 
