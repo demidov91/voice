@@ -188,11 +188,31 @@ TBD
 </details>
 
 
-## 3-6 TBD
 
+## 3. Calculate coefficients
 
+### 3.1 Tsikhanouskaya coefficients
+TBD
 
-## Estimated final results.
+### 3.2 Protest coefficients
+TBD
+
+### 3.3 Alternative candidates coefficients
+TBD
+
+## 4. Clear data based on Zubr reports
+TBD
+
+## 5. Turnout estimation
+TBD
+
+## 6. Caclulate total
+### 6.1 Number of votes
+TBD
+### 6.2 Votes per candidates
+TBD
+
+## 7. Estimated final results.
 
 ### Total:
 
