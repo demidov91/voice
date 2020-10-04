@@ -155,7 +155,7 @@ Result is here: [tusted_by_voice.csv](tusted_by_voice.csv)
 
 * Notice that `zubr.csv` has also introduced `wrong-voters-number`, `observers` and `zubr_id` columns. `no-medcine-on-poll-station` is ignored as not relevant to our aims.
 
-
+Result is here: [tusted_by_voice.csv](tusted_by_voice_extended.csv). It also contains an `outlier-reason` column explained in the 3d chapter.
   
 ### 2.2 Correlation
 
