@@ -4260,10 +4260,10 @@ id,town,area,latitude,longitude,region
 05-141-0062,Привольный,village,53.798087,27.798654,5
 05-141-0063,Замосточье,village,53.822862,27.867555,5
 05-141-0064,Луговослободской сельский Совет,minsk_suburb,53.859291,27.828107,5
-05-141-0065,Machulishi,town_below100,53.784819,27.595227,5
-05-141-0066,Machulishi,town_below100,53.784586,27.595323,5
-05-141-0067,Machulishi,town_below100,53.780235,27.595338,5
-05-141-0068,Machulishi,town_below100,53.780235,27.595338,5
+05-141-0065,Machulishi,minsk_suburb,53.784819,27.595227,5
+05-141-0066,Machulishi,minsk_suburb,53.784586,27.595323,5
+05-141-0067,Machulishi,minsk_suburb,53.780235,27.595338,5
+05-141-0068,Machulishi,minsk_suburb,53.780235,27.595338,5
 05-141-0069,Michanavičy,village,53.737671,27.687478,5
 05-141-0070,Michanavičy,village,53.739827,27.694566,5
 05-141-0071,Michanavičy,village,53.743779,27.696524,5
