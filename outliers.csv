@@ -81,13 +81,6 @@ id,reason,explanation
 06-012-0076,report,Outliers. Zubr report.
 06-132-0001,report,Outliers. Zubr report.
 07-001-0029,report,Outliers. Zubr report.
-03-096-0025,one-observer,Too many outliers. One observer.
-01-060-0010,one-observer,Too many outliers. One observer.
-01-051-0003,one-observer,One outlier. One observer.
-04-114-0017,one-observer,One outlier. One observer.
-05-042-0017,one-observer,Two outliers. One observer.
-05-042-0019,one-observer,Two outliers. One observer.
-02-016-0040,one-observer,Two outliers. One observer.
 05-141-0020,mess-in-report,Duplicate from 05-141-0024.
 01-011-0058,mess-in-report,Mess in the report.
 04-112-0013,mess-in-report,Mess in the report.
@@ -373,6 +366,8 @@ id,reason,explanation
 06-121-0006,lukashenko-high-turnout-one-observer,Too many for Lukashenko. High turnout. One observer.
 06-135-0001,lukashenko-high-turnout-one-observer,Too many for Lukashenko. High turnout. One observer.
 06-135-0020,lukashenko-high-turnout-one-observer,Too many for Lukashenko. High turnout. One observer.
+01-060-0010,lukashenko-one-observer,Too many for Lukashenko. Too many outliers. One observer.
+02-016-0040,lukashenko-one-observer,Too many for Lukashenko and Against. One observer.
 02-067-0005,lukashenko-one-observer,Too many for Lukashenko. One observer.
 02-076-0020,lukashenko-one-observer,Too many for Lukashenko. One observer.
 02-077-0006,lukashenko-one-observer,Too many for Lukashenko. One observer.
