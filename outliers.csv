@@ -6,17 +6,13 @@ id,reason,explanation
 05-141-0037,trusted,Trusted. Clinic. People didn't expect to vote from there.
 05-141-0026,trusted,Trusted. Novaja Baravaja is a separate world.
 05-141-0027,trusted,Trusted. Novaja Baravaja is a separate world.
+01-010-0001,trusted-many-for-lukashenko,Trusted. Many for Lukashenko. No zubr report.
 06-125-0012,trusted-many-for-lukashenko,Trusted. Many for Lukashenko. No zubr report.
 01-010-0030,trusted-high-turnout-many-for-lukashenko,"Trusted. High turnout, many for Lukashenko. No zubr report."
 04-021-0032,trusted-high-turnout-many-for-lukashenko,"Trusted. High turnout, many for Lukashenko. No zubr report."
 04-022-0070,trusted-high-turnout-many-for-lukashenko,"Trusted. High turnout, many for Lukashenko. No zubr report."
 05-041-0011,trusted-high-turnout-many-for-lukashenko,"Trusted. High turnout, many for Lukashenko. No zubr report."
 05-041-0026,trusted-high-turnout-many-for-lukashenko,"Trusted. High turnout, many for Lukashenko. No zubr report."
-05-026-0041,alternative-candidates,Too many for Cherechen and Kanopatskaja. Zubr report.
-05-026-0055,alternative-candidates,Too many for Cherechen. No observer.
-04-022-0115,alternative-candidates,Too many for Cherechen. Zubr reports.
-05-141-0036,alternative-candidates,Too few for Cherechen. Observer is not allowed inside.
-05-141-0009,alternative-candidates,Too few for Cherechen. Observer is not allowed inside.
 01-011-0081,alternative-candidates,Too many for Dmitriev. Zubr report.
 05-026-0064,alternative-candidates,Too many for Dmitriev. Zubr report.
 04-022-0116,alternative-candidates,Too many for Dmitriev. No observer.
@@ -203,6 +199,7 @@ id,reason,explanation
 05-141-0001,luhashenko-report,Too many for Lukashenko. Zubr report.
 05-141-0004,luhashenko-report,Too many for Lukashenko. Zubr report.
 05-141-0006,luhashenko-report,Too many for Lukashenko. Zubr report.
+05-141-0009,luhashenko-report,Too many for Lukashenko. Zubr report.
 05-141-0012,luhashenko-report,Too many for Lukashenko. Zubr report.
 05-141-0028,luhashenko-report,Too many for Lukashenko. Zubr report.
 05-141-0032,luhashenko-report,Too many for Lukashenko. Zubr report.
@@ -214,6 +211,7 @@ id,reason,explanation
 05-141-0031,luhashenko-report,Too many for Lukashenko. Zubr report.
 05-141-0033,luhashenko-report,Too many for Lukashenko. Zubr report.
 05-141-0035,luhashenko-report,Too many for Lukashenko. Zubr report.
+05-141-0036,luhashenko-report,Too many for Lukashenko. Zubr report.
 05-141-0038,luhashenko-report,Too many for Lukashenko. Zubr report.
 05-141-0047,luhashenko-report,Too many for Lukashenko. Zubr report.
 05-141-0060,luhashenko-report,Too many for Lukashenko. Zubr report.

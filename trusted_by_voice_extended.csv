@@ -1,5 +1,5 @@
 id,town,area,latitude,longitude,region,monitoredVotes,registered,photoVoices,officialVotes,officialVoters,against_registered,against_officialVotes,against_photoVoices,cherechen_registered,cherechen_officialVotes,cherechen_photoVoices,corrupted_registered,corrupted_officialVotes,corrupted_photoVoices,dmitriyev_registered,dmitriyev_officialVotes,dmitriyev_photoVoices,ignore_registered,ignore_officialVotes,ignore_photoVoices,kanopatskaja_registered,kanopatskaja_officialVotes,kanopatskaja_photoVoices,lukashenko_registered,lukashenko_officialVotes,lukashenko_photoVoices,tihanovkaja_registered,tihanovkaja_officialVotes,tihanovkaja_photoVoices,zubr_id,observers,wrong-voters-number,major-violations,minor-violations,outlier-reason
-01-010-0001,Brest,city,52.089515,23.680013,1,,486,256,1319.0,1656.0,9,96.0,2,4,16.0,0,1,5.0,1,1,21.0,0,0,,0,0,16.0,0,5,464.0,0,466,701.0,253,911,2,False,False,False,
+01-010-0001,Brest,city,52.089515,23.680013,1,,486,256,1319.0,1656.0,9,96.0,2,4,16.0,0,1,5.0,1,1,21.0,0,0,,0,0,16.0,0,5,464.0,0,466,701.0,253,911,2,False,False,False,trusted-many-for-lukashenko
 01-010-0002,Brest,city,52.09133,23.652785,1,,474,291,2249.0,2646.0,8,194.0,5,1,32.0,1,0,13.0,0,5,43.0,1,0,,0,1,25.0,0,3,994.0,0,456,948.0,284,912,6,False,True,False,luhashenko-report
 01-010-0004,Brest,city,52.098645,23.654222,1,,275,154,1714.0,1805.0,8,97.0,1,1,24.0,0,0,15.0,0,4,32.0,0,1,,0,1,26.0,0,0,1125.0,0,260,395.0,153,914,1,False,False,False,lukashenko-high-turnout
 01-010-0005,Brest,city,52.099618,23.649713,1,,334,179,2122.0,2270.0,7,91.0,1,1,50.0,1,1,,0,0,42.0,0,1,,1,1,21.0,1,2,1506.0,1,321,412.0,174,915,3,False,True,True,mess-in-report
@@ -459,7 +459,7 @@ id,town,area,latitude,longitude,region,monitoredVotes,registered,photoVoices,off
 05-141-0006,Borovlyany,minsk_suburb,53.982676,27.657205,5,,833,565,1847.0,2486.0,11,85.0,3,1,12.0,1,0,,0,5,22.0,2,1,,0,1,17.0,1,5,707.0,1,809,1004.0,557,4578,6,True,False,True,luhashenko-report
 05-141-0007,Korolev Stan,minsk_suburb,53.988876,27.791045,5,,206,124,1132.0,1325.0,4,20.0,2,0,8.0,0,0,9.0,0,2,27.0,0,0,,0,2,14.0,1,0,698.0,0,198,356.0,121,4579,2,False,False,True,tihanovkaja-report
 05-141-0008,Лесковка,minsk_suburb,53.998976,27.719944,5,,549,327,1437.0,2144.0,11,69.0,7,0,9.0,0,0,16.0,0,5,31.0,1,2,,1,2,11.0,1,6,613.0,0,523,688.0,317,4580,6,False,False,True,
-05-141-0009,Лесковка,minsk_suburb,53.998976,27.719944,5,,522,351,1428.0,1974.0,17,106.0,9,0,4.0,0,1,10.0,1,3,22.0,0,1,,0,0,14.0,0,3,567.0,0,497,705.0,341,4581,6,False,False,True,alternative-candidates
+05-141-0009,Лесковка,minsk_suburb,53.998976,27.719944,5,,522,351,1428.0,1974.0,17,106.0,9,0,4.0,0,1,10.0,1,3,22.0,0,1,,0,0,14.0,0,3,567.0,0,497,705.0,341,4581,6,False,False,True,luhashenko-report
 05-141-0011,Боровлянский сельский Совет,minsk_suburb,54.009057,27.679385,5,,616,422,1263.0,1821.0,15,96.0,2,0,10.0,0,2,5.0,1,4,17.0,2,3,,0,0,10.0,0,3,178.0,1,589,947.0,416,4583,7,False,False,False,
 05-141-0012,Lyasny,minsk_suburb,54.00937,27.683066,5,,585,432,1279.0,1821.0,12,80.0,7,2,15.0,1,0,14.0,0,1,13.0,1,1,,1,1,14.0,1,2,183.0,0,566,960.0,421,4584,16,True,False,True,luhashenko-report
 05-141-0013,Lyasny,minsk_suburb,54.008119,27.683392,5,,731,527,1569.0,2980.0,12,76.0,3,0,20.0,0,1,30.0,1,7,22.0,3,1,,0,3,8.0,0,2,419.0,0,705,1024.0,520,4585,9,False,False,False,mess-in-report
@@ -485,7 +485,7 @@ id,town,area,latitude,longitude,region,monitoredVotes,registered,photoVoices,off
 05-141-0033,Чачково,village,53.893685,27.203407,5,,138,93,852.0,1036.0,3,62.0,2,0,12.0,0,0,,0,0,14.0,0,0,,0,0,14.0,0,0,501.0,0,135,249.0,91,4605,1,False,False,True,luhashenko-report
 05-141-0034,Zhdanovichi,minsk_suburb,53.948231,27.42906,5,,540,351,1721.0,2001.0,13,103.0,5,1,36.0,1,0,,0,3,21.0,0,0,,0,0,29.0,0,6,894.0,0,517,638.0,345,4606,3,True,False,False,luhashenko-report
 05-141-0035,Zhdanovichi,minsk_suburb,53.95025,27.429922,5,,428,292,1502.0,2143.0,13,29.0,5,1,4.0,1,2,,0,1,16.0,0,0,,0,0,13.0,0,1,796.0,0,410,644.0,286,4607,6,True,True,True,luhashenko-report
-05-141-0036,Zhdanovichi,minsk_suburb,53.938803,27.414786,5,,556,365,1781.0,2398.0,9,21.0,3,1,2.0,1,0,,0,5,3.0,2,3,,1,3,4.0,0,2,983.0,0,533,768.0,358,4608,4,False,False,True,alternative-candidates
+05-141-0036,Zhdanovichi,minsk_suburb,53.938803,27.414786,5,,556,365,1781.0,2398.0,9,21.0,3,1,2.0,1,0,,0,5,3.0,2,3,,1,3,4.0,0,2,983.0,0,533,768.0,358,4608,4,False,False,True,luhashenko-report
 05-141-0037,Zhdanovichi,minsk_suburb,53.962795,27.434049,5,,3,1,61.0,61.0,1,6.0,0,0,1.0,0,0,,0,0,1.0,0,0,,0,0,1.0,0,0,47.0,0,2,5.0,1,4609,0,False,False,False,trusted
 05-141-0038,Ratomka,minsk_suburb,53.94387,27.347646,5,,654,437,1784.0,2242.0,5,78.0,2,0,16.0,0,1,5.0,1,2,18.0,1,3,,0,1,11.0,0,0,956.0,0,642,700.0,433,4610,13,True,False,True,luhashenko-report
 05-141-0039,Ratomka,minsk_suburb,53.937726,27.358239,5,,488,307,2217.0,2404.0,5,25.0,4,4,12.0,1,1,,0,8,8.0,3,1,,0,1,24.0,0,0,1302.0,0,468,846.0,299,4611,5,True,False,True,luhashenko-report
