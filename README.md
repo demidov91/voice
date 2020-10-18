@@ -192,14 +192,15 @@ As we see `registration` data tends to give more robust resluts than `photo` dat
   * `p_tsikhanouskaya` - estimated votes for Tsikhanouskaya
   * `k` - *average* coefficient for each alternative candidate calculated for different *areas* and *regions*
 
-### 3.2 Charts 
-It was done iterativly: analyze and remove outliers, calculate coefficient for *area-region* pair, repeat. Below are charts with non-trusted poll stations marked. Only **278 poll stations** was left as trusted in terms of the number of votes against Lukashenko (for any candidate). Notice that some of them were not trusted when estimating turnout (see *chapter 5*).
+### 3.2 Outliers on chart 
+It was done iterativly: analyze and remove outliers, calculate coefficient for *area-region* pair, repeat. Below are charts with non-trusted poll stations marked. Only **278 poll stations** was left as trusted. Notice that some of them were not trusted when estimating turnout (see *chapter 5*).
 
 <details>
 TBD
 </details>
 
 Outliers: [outliers.csv](outliers.csv)
+
 Dataset after removing outliers: [trusted-for-alternative.csv](trusted-for-alternative.csv)
 
 ### 3.3 Fix number of corrupted ballots
