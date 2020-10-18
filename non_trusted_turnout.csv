@@ -37,6 +37,7 @@ id,reason
 05-042-0050,no-observer
 05-045-0012,no-observer
 06-135-0002,no-observer
+01-011-0037,one-observer
 04-110-0013,one-observer
 04-145-0024,one-observer
 04-114-0017,one-observer
@@ -50,6 +51,7 @@ id,reason
 01-049-0013,minor-violation
 01-056-0005,minor-violation
 02-143-0019,minor-violation
+02-016-0059,minor-violation
 03-096-0023,minor-violation
 04-105-0011,minor-violation
 05-038-0004,minor-violation
@@ -95,13 +97,14 @@ id,reason
 03-091-0017,outlier
 03-102-0003,outlier
 04-112-0029,outlier
+04-021-0032,outlier
 04-021-0044,outlier
 04-117-0014,outlier
 04-112-0044,outlier
+04-115-0005,outlier
 04-112-0025,outlier
 04-112-0007,outlier
 04-112-0026,outlier
-04-021-0008,outlier
 04-022-0128,outlier
 05-039-0012,outlier
 05-027-0023,outlier
