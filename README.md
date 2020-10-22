@@ -125,9 +125,9 @@ Examples (*registered/official votes*):
 |:---:|:---:|:---:|:---:|:---|
 |68 / 170|20 / 95|12 / 32|1 / 142| **Yes** |
 |68 / 170|20 / 95|8 / 9|1 / 142| **Yes** |
-|68 / 170|20 / 95|**8 / 7**|1 / 142| **Yes** `7 < 8`, but `7 < 10` |
+|68 / 170|20 / 95|**8 / 7**|1 / 142| **Yes** `7 < 8`, but `8 < 10` |
 |**68 / 39**|20 / 95|12 / 32|1 / 142| **No** `68 < 39` |
-|68 / 170|20 / 95|**12 / 7**|1 / 142| **No** `7 < 12` |
+|68 / 170|20 / 95|**12 / 7**|1 / 142| **No** `7 < 12` and `12 > 10` |
 
 Result is here: [tusted_by_voice.csv](tusted_by_voice.csv)
 
@@ -193,7 +193,7 @@ As we see `registration` data tends to give more robust resluts than `photo` dat
   * `k` - *average* coefficient for each alternative candidate calculated for different *areas* and *regions*
 
 ### 3.2 Outliers on chart 
-It was done iterativly: analyze and remove outliers, calculate coefficient for *area-region* pair, repeat. Below are charts with non-trusted poll stations marked. Only **278 poll stations** was left as trusted. Notice that some of them were not trusted when estimating turnout (see *chapter 5*).
+It was done iterativly: analyze and remove outliers, calculate coefficient for *area-region* pair, repeat. Below are charts with non-trusted poll stations marked. Only **288 poll stations** was left as trusted. Notice that some of them were not trusted when estimating turnout (see *chapter 5*).
 
 <details>
 TBD
