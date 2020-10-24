@@ -125,9 +125,9 @@ Examples (*registered/official votes*):
 |:---:|:---:|:---:|:---:|:---|
 |68 / 170|20 / 95|12 / 32|1 / 142| **Yes** |
 |68 / 170|20 / 95|8 / 9|1 / 142| **Yes** |
-|68 / 170|20 / 95|**8 / 7**|1 / 142| **Yes** `7 < 8`, but `7 < 10` |
+|68 / 170|20 / 95|**8 / 7**|1 / 142| **Yes** `7 < 8`, but `8 < 10` |
 |**68 / 39**|20 / 95|12 / 32|1 / 142| **No** `68 < 39` |
-|68 / 170|20 / 95|**12 / 7**|1 / 142| **No** `7 < 12` |
+|68 / 170|20 / 95|**12 / 7**|1 / 142| **No** `7 < 12` and `12 > 10` |
 
 Result is here: [tusted_by_voice.csv](tusted_by_voice.csv)
 
@@ -193,7 +193,7 @@ As we see `registration` data tends to give more robust resluts than `photo` dat
   * `k` - *average* coefficient for each alternative candidate calculated for different *areas* and *regions*
 
 ### 3.2 Outliers on chart 
-It was done iterativly: analyze and remove outliers, calculate coefficient for *area-region* pair, repeat. Below are charts with non-trusted poll stations marked. Only **278 poll stations** was left as trusted. Notice that some of them were not trusted when estimating turnout (see *chapter 5*).
+It was done iterativly: analyze and remove outliers, calculate coefficient for *area-region* pair, repeat. Below are charts with non-trusted poll stations marked. Only **288 poll stations** was left as trusted. Notice that some of them were not trusted when estimating turnout (see *chapter 5*).
 
 <details>
 TBD
@@ -262,17 +262,17 @@ TBD
 
 ### Total:
 
-**lukashenko: 50.0 %**
+**lukashenko: 45.2 %**
 
-**tihanovkaja: 38.5 %**
+**tihanovkaja: 42.6 %**
 
-against: 5.7 %
+against: 6.1 %
 
-dmitriyev: 1.8 %
+dmitriyev: 1.9 %
 
-cherechen: 1.6 %
+cherechen: 1.7 %
 
-kanopatskaja: 1.4 %
+kanopatskaja: 1.5 %
 
 corrupted: 1.1 %
 
@@ -283,6 +283,8 @@ corrupted: 1.1 %
 |---|---|
 |[![plot1](images-3/true-map.png)](geo/compete.geojson)|[![plot2](images-3/luk-vs-rest.png)](geo/against-lukashenko.geojson)|
 
+
+Further information is outdated:
 
 ### By region
 <details>
