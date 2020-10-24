@@ -11,33 +11,7 @@ id,reason,explanation
 06-125-0012,trusted-many-for-lukashenko,Trusted. Many for Lukashenko. No zubr report.
 01-010-0030,trusted-high-turnout-many-for-lukashenko,"Trusted. High turnout, many for Lukashenko. No zubr report."
 04-022-0070,trusted-high-turnout-many-for-lukashenko,"Trusted. High turnout, many for Lukashenko. No zubr report."
-05-041-0011,trusted-high-turnout-many-for-lukashenko,"Trusted. High turnout, many for Lukashenko. No zubr report."
-05-041-0026,trusted-high-turnout-many-for-lukashenko,"Trusted. High turnout, many for Lukashenko. No zubr report."
-01-011-0081,alternative-candidates,Too many for Dmitriev. Zubr report.
-05-026-0064,alternative-candidates,Too many for Dmitriev. Zubr report.
-04-022-0116,alternative-candidates,Too many for Dmitriev. No observer.
-02-075-0038,alternative-candidates,Too many for Dmitriev. No observer.
-04-022-0100,alternative-candidates,Too many for Against. Zubr report.
-05-026-0041,alternative-candidates,Too many for Kanopatskaja. Zubr report.
-05-141-0065,alternative-candidates,Too many for Kanopatskaja. Zubr report.
-05-141-0066,alternative-candidates,Too many for Kanopatskaja. Zubr report.
-07-001-0029,alternative-candidates,Too many for Kanopatskaja. Zubr report.
-03-018-0028,alternative-candidates,Too many for Kanopatskaja. Zubr report.
-06-132-0001,alternative-candidates,Too many for Kanopatskaja. Zubr report.
-03-096-0041,alternative-candidates,Too many for Kanopatskaja. Zubr report.
-02-016-0039,alternative-candidates,Too many for Kanopatskaja. No observer.
-05-141-0074,alternative-candidates,Too few for Against. Zubr report.
-07-006-0038,alternative-candidates,Too few for Against. Zubr report.
-07-008-0080,alternative-candidates,Too few for Against. Zubr report.
-07-008-0081,alternative-candidates,Too few for Against. Zubr report.
-07-006-0020,alternative-candidates,Too few for Against. Zubr report.
-07-006-0033,alternative-candidates,Too few for Against. Zubr report.
-07-009-0021,alternative-candidates,Too few for Against. Zubr report.
-02-075-0038,alternative-candidates,Too few for Against. Zubr report.
-05-026-0082,alternative-candidates,Too few for Against. No observers.
-05-026-0082,alternative-candidates,Too many for Against. One observer.
-05-036-0051,alternative-candidates,Too many for Against. No observer.
-05-041-0025,alternative-candidates,Too many for corrupted. One observer.
+05-041-0011,trusted-high-turnout-many-for-lukashenko,"Trusted. High turnout, many for Lukashenko. No zubr report. Two observers."
 04-106-0002,tihanovkaja-report,Less than expected. Many reports on Zubr platform.
 01-047-0054,tihanovkaja-report,Less than expected. Zubr report.
 07-002-0103,tihanovkaja-report,SPB embassy. Less than expected. Zubr report.
@@ -46,19 +20,33 @@ id,reason,explanation
 02-075-0056,tihanovkaja-report,Too few Tihanovkaja. Zubr report.
 03-091-0029,tihanovkaja-report,Too few Tihanovkaja. Zubr report.
 03-096-0004,tihanovkaja-report,Too few Tihanovkaja. Zubr report.
+03-018-0028,tihanovkaja-report,Too many for Kanopatskaja. Zubr report.
+03-096-0041,tihanovkaja-report,Too many for Kanopatskaja. Zubr report.
+04-022-0100,tihanovkaja-report,Too many for Against. Zubr report.
+05-026-0064,tihanovkaja-report,Too many for Dmitriev. Zubr report.
+05-026-0041,tihanovkaja-report,Too many for Kanopatskaja. Zubr report.
+05-141-0065,tihanovkaja-report,Too many for Kanopatskaja. Zubr report.
+05-141-0066,tihanovkaja-report,Too many for Kanopatskaja. Zubr report.
 05-041-0028,tihanovkaja-report,Too few Tihanovkaja. Zubr report.
 05-141-0029,tihanovkaja-report,Too few Tihanovkaja. Zubr report.
 05-141-0007,tihanovkaja-report,Too few Tihanovkaja. Zubr report.
 05-141-0084,tihanovkaja-report,Too few Tihanovkaja. Zubr report.
 06-013-0017,tihanovkaja-report,Too few Tihanovkaja. Conflict reported.
 06-135-0009,tihanovkaja-report,Too few Tihanovkaja. Zubr report.
+06-132-0001,tihanovkaja-report,Too many for Kanopatskaja. Zubr report.
+07-001-0029,tihanovkaja-report,Too many for Kanopatskaja. Zubr report.
 07-001-0078,tihanovkaja-report,Too few Tihanovkaja. Conflict reported.
 07-006-0016,tihanovkaja-report,Too few Tihanovkaja. Zubr report.
 07-006-0071,tihanovkaja-report,Too few Tihanovkaja. Zubr report.
+02-016-0039,tihanovkaja-no-observers,Too many for Kanopatskaja. No observer.
+02-075-0038,tihanovkaja-no-observers,Too many for Dmitriev. No observer.
 03-100-0045,tihanovkaja-no-observers,Too few Tihanovkaja. No observers.
 04-021-0040,tihanovkaja-no-observers,Too few Tihanovkaja. No observers.
-06-024-0050,tihanovkaja-no-observers,Too few Tihanovkaja. No observers.
+04-022-0116,tihanovkaja-no-observers,Too many for Dmitriev. No observer.
+05-026-0082,tihanovkaja-no-observers,Too many for Against. No observer.
+05-036-0051,tihanovkaja-no-observers,Too many for Against. No observer.
 05-141-0016,tihanovkaja-no-observers,Too few Tihanovkaja. No observers.
+06-024-0050,tihanovkaja-no-observers,Too few Tihanovkaja. No observers.
 03-018-0048,report,Outliers. Zubr report.
 04-022-0066,report,Outliers. Zubr report.
 04-022-0090,report,Outliers. Zubr report.
@@ -95,6 +83,7 @@ id,reason,explanation
 01-011-0075,luhashenko-report,Too many for Lukashenko. Conflict reported.
 01-011-0078,luhashenko-report,Too many for Lukashenko. Conflict reported.
 01-011-0080,luhashenko-report,Too many for Lukashenko. Zubr report.
+01-011-0081,luhashenko-report,Too many for Lukashenko and Dmitriev. Zubr report.
 01-047-0030,luhashenko-report,Too many for Lukashenko. Zubr report.
 01-049-0014,luhashenko-report,Too many for Lukashenko. No signature.
 01-054-0010,luhashenko-report,Too many for Lukashenko. Zubr report.
@@ -186,6 +175,14 @@ id,reason,explanation
 05-039-0007,luhashenko-report,Too many for Lukashenko. Zubr report.
 05-039-0009,luhashenko-report,Too many for Lukashenko. Zubr report.
 05-045-0014,luhashenko-report,Too many for Lukashenko. Zubr report.
+05-141-0074,luhashenko-report,Too few for Against. Zubr report.
+07-006-0038,luhashenko-report,Too few for Against. Zubr report.
+07-008-0080,luhashenko-report,Too few for Against. Zubr report.
+07-008-0081,luhashenko-report,Too few for Against. Zubr report.
+07-006-0020,luhashenko-report,Too few for Against. Zubr report.
+07-006-0033,luhashenko-report,Too few for Against. Zubr report.
+07-009-0021,luhashenko-report,Too few for Against. Zubr report.
+02-075-0038,luhashenko-report,Too few for Against. Zubr report.
 05-141-0001,luhashenko-report,Too many for Lukashenko. Zubr report.
 05-141-0004,luhashenko-report,Too many for Lukashenko. Zubr report.
 05-141-0006,luhashenko-report,Too many for Lukashenko. Zubr report.
@@ -255,7 +252,6 @@ id,reason,explanation
 07-003-0019,luhashenko-report,Too many for Lukashenko. Zubr report.
 07-003-0021,luhashenko-report,Too many for Lukashenko. Zubr report.
 07-003-0093,luhashenko-report,Too many for Lukashenko. Zubr report.
-07-004-0018,luhashenko-report,Too many for Lukashenko. Zubr report.
 07-004-0047,luhashenko-report,Too many for Lukashenko. Zubr report.
 07-005-0006,luhashenko-report,Too many for Lukashenko. Zubr report.
 07-005-0014,luhashenko-report,Too many for Lukashenko. Zubr report.
@@ -295,6 +291,7 @@ id,reason,explanation
 04-118-0002,lukashenko-no-observers,Too many for Lukashenko. No observers.
 04-112-0054,lukashenko-no-observers,Too many for Lukashenko. No observers.
 05-026-0066,lukashenko-no-observers,Too many for Lukashenko. No observers.
+05-026-0082,lukashenko-no-observers,Too few for Against. No observers.
 05-027-0005,lukashenko-no-observers,Too many for Lukashenko. No observers.
 05-040-0018,lukashenko-no-observers,Too many for Lukashenko. No observers.
 05-041-0032,lukashenko-no-observers,Too many for Lukashenko. No observers.
@@ -361,6 +358,7 @@ id,reason,explanation
 04-118-0027,lukashenko-one-observer,Too many for Lukashenko. One observer.
 04-145-0023,lukashenko-one-observer,Too many for Lukashenko. One observer.
 05-036-0076,lukashenko-one-observer,Too many for Lukashenko. One observer.
+05-041-0025,lukashenko-one-observer,Too many for corrupted. One observer.
 07-001-0061,lukashenko-one-observer,Too many for Lukashenko. One observer.
 01-010-0004,lukashenko-high-turnout,"High turnout, many for Lukashenko. No zubr report."
 01-010-0012,lukashenko-high-turnout,"High turnout, many for Lukashenko. No zubr report."

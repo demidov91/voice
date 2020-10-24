@@ -17,12 +17,12 @@ city,3,0.7532,0.1024,area
 city,4,0.8041,0.0588,area-region
 city,5,0.7532,0.1024,area
 city,6,0.7532,0.1024,area
-village,1,0.7774,0.0896,area
-village,2,0.7774,0.0896,area
+village,1,0.7787,0.0885,area
+village,2,0.7787,0.0885,area
 village,3,0.7870,0.0469,area-region
-village,4,0.7774,0.0896,area
-village,5,0.7774,0.0896,area
-village,6,0.7774,0.0896,area
+village,4,0.7787,0.0885,area
+village,5,0.7787,0.0885,area
+village,6,0.7787,0.0885,area
 minsk_suburb,5,0.6999,0.0605,area
 capital,7,0.7043,0.1089,area
 embassy,8,0.8234,0.1668,area

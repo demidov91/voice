@@ -1,0 +1,15 @@
+area,coefficient,correlation,source,region
+city,2.847,0.946,area,
+minsk_suburb,1.851,0.898,area,
+capital,1.717,0.895,area,
+village,2.725,0.834,area,
+town_below100,2.908,0.837,area,
+town_over100,2.712,0.693,area,
+embassy,1.561,0.976,area,
+,3.084,0.964,region,1.000
+,2.890,0.763,region,2.000
+,2.649,0.917,region,3.000
+,2.908,0.924,region,4.000
+,2.624,0.862,region,5.000
+,3.493,0.691,region,6.000
+,2.843,0.895,total,
