@@ -193,7 +193,7 @@ Charts for **votes against Lukashenko** is built in a similar way. Votes against
   * `k` - *average* coefficient for each alternative candidate calculated for different *areas* and *regions*
 
 ### 3.2 Outliers on chart 
-It was done iterativly: analyze and remove outliers, calculate coefficient for *area-region* pair, repeat. Below are charts with non-trusted poll stations marked. Only **288 poll stations** was left as trusted. Notice that some of them were not trusted when estimating turnout (see below).
+It was done iterativly: analyze and remove outliers, calculate coefficient for *area-region* pair, repeat. Below are charts with non-trusted poll stations marked. Only **288 polling stations** was left as trusted. Notice that some of them were not trusted when estimating turnout (see *chapter 5*).
 
 
 | area/region | Brest | Viciebsk | Homieĺ | Hrodna | Minsk | Mahilioŭ | Total |
@@ -271,23 +271,48 @@ Columns:
   * `against`  (3d step)
   * `corrupted` (3d step)
 * `area`
-* `coefficient` (float number between **0** and **1**)
+* `coefficient` (float number between *0* and *1*)
 * `std` (for intermediate calculations)
 * `coeff_variation` (measure of reliability)
 * `source` (one of `total` or `area`)
 
-## 4. Turnout estimation
+## 4. Turnout
+
+*141* out of *288* polling stations were not trusted wnen calculating average turnout: [non_trusted_turnout.csv](non_trusted_turnout.csv)
+
+Columns:
+* `id` - polling station identifier
+* `reason` - reason for not including into a trusted set. One of:
+  * `zubr-report` - official number of voters differs from observed number
+  * `no-observer` - there was no independent observers
+  * `one-observer` - there was only one independent observer
+  * `outlier` - official turnout is much higher than an average value for this area or region. Usually it comes together with much higher Lukashenko results than average in this region/area.
+
+
+Estimated turnout dataset: [turnout.csv](turnout.csv)
+
+Colunms:
+* `area`
+* `region`
+* `turnout`
+* `coeff_variation` - measure of reliability to choose the distribution (see below)
+* `source` - subset of polling stations chosen for this area-region pair. One of `area-region` or `area`.
+
+
+## 5. Number of voters
+
+We don't have official data from **most of polling stations**. So, we don't know most of polling stations sizes - number of people assigned to this station. It was calculated as an average number per each *area* based on available *Voice* data: [poll-station-size.csv](poll-station-size.csv) 
+
+Total number was of voters estimated this way was too high as we know **official number of voters** per each *region* (not *area*): [voters.csv](voters.csv). It was published before elections. Each *region* got its coefficient (`< 1`) to reduce expected polling station size.  
+
+Resulting polling stations sizes: [total-votes.csv](total-votes.csv)
+
+## 6. Votes per candidates
+
 TBD
 
-## 6. Caclulate total
-### 6.1 Number of votes
-TBD
-### 6.2 Votes per candidates
-TBD
 
-## 7. Estimated final results.
-
-### Total:
+## 7. Final result
 
 **lukashenko: 45.2 %**
 
@@ -310,409 +335,4 @@ corrupted: 1.1 %
 |---|---|
 |[![plot1](images/true-map.png)](geo/compete.geojson)|[![plot2](images/luk-vs-rest.png)](geo/against-lukashenko.geojson)|
 
-
-Further information is outdated:
-
-### By region
-<details>
-
-#### Brest region
-
-**lukashenko: 47.9 %**
-
-**tihanovkaja: 39.3 %**
-
-against: 6.2 %
-
-dmitriyev: 2.1 %
-
-cherechen: 1.9 %
-
-kanopatskaja: 1.5 %
-
-corrupted: 1.2 %
-
-#### Viciebsk region
-
-**lukashenko: 63.8 %**
-
-**tihanovkaja: 26.8 %**
-
-against: 4.5 %
-
-dmitriyev: 1.5 %
-
-cherechen: 1.4 %
-
-kanopatskaja: 1.1 %
-
-corrupted: 0.8 %
-
-#### Homel region
-
-**lukashenko: 61.5 %**
-
-**tihanovkaja: 29.6 %**
-
-against: 4.3 %
-
-dmitriyev: 1.4 %
-
-cherechen: 1.3 %
-
-kanopatskaja: 1.1 %
-
-corrupted: 0.8 %
-
-#### Hrodna region
-
-**lukashenko: 43.2 %**
-
-**tihanovkaja: 43.8 %**
-
-against: 6.3 %
-
-dmitriyev: 2.1 %
-
-cherechen: 1.9 %
-
-kanopatskaja: 1.5 %
-
-corrupted: 1.1 %
-
-#### Minsk region (without Minsk)
-
-**lukashenko: 51.8 %**
-
-**tihanovkaja: 37.7 %**
-
-against: 5.2 %
-
-dmitriyev: 1.7 %
-
-cherechen: 1.4 %
-
-kanopatskaja: 1.2 %
-
-corrupted: 1.0 %
-
-#### Mahiliou region
-
-**lukashenko: 66.5 %**
-
-**tihanovkaja: 25.2 %**
-
-against: 4.0 %
-
-dmitriyev: 1.3 %
-
-cherechen: 1.2 %
-
-kanopatskaja: 0.9 %
-
-corrupted: 0.7 %
-
-#### Minsk
-
-**lukashenko: 20.7 %**
-
-**tihanovkaja: 62.2 %**
-
-against: 8.9 %
-
-dmitriyev: 2.1 %
-
-cherechen: 2.0 %
-
-kanopatskaja: 2.0 %
-
-corrupted: 2.1 %
-
-#### Embassy
-
-**lukashenko: 49.9 %**
-
-**tihanovkaja: 47.7 %**
-
-against: 0.7 %
-
-dmitriyev: 0.4 %
-
-cherechen: 0.3 %
-
-kanopatskaja: 0.4 %
-
-corrupted: 0.6 %
-</details>
-
-### By area
-
-<details>
-
-#### capital
-
-**lukashenko: 20.5 %**
-
-**tihanovkaja: 62.3 %**
-
-against: 9.0 %
-
-dmitriyev: 2.1 %
-
-cherechen: 2.0 %
-
-kanopatskaja: 2.0 %
-
-corrupted: 2.1 %
-
-
-#### minsk_suburb
-
-**lukashenko: 34.6 %**
-
-**tihanovkaja: 56.4 %**
-
-against: 4.4 %
-
-dmitriyev: 1.5 %
-
-cherechen: 1.2 %
-
-kanopatskaja: 1.1 %
-
-corrupted: 0.9 %
-
-
-#### city
-
-**lukashenko: 41.1 %**
-
-**tihanovkaja: 44.0 %**
-
-against: 7.3 %
-
-dmitriyev: 2.5 %
-
-cherechen: 2.2 %
-
-kanopatskaja: 1.8 %
-
-corrupted: 1.2 %
-
-
-#### town_over100
-
-**lukashenko: 44.6 %**
-
-**tihanovkaja: 42.5 %**
-
-against: 6.3 %
-
-dmitriyev: 2.0 %
-
-cherechen: 1.9 %
-
-kanopatskaja: 1.3 %
-
-corrupted: 1.3 %
-
-#### town_below100
-
-**lukashenko: 50.6 %**
-
-**tihanovkaja: 37.7 %**
-
-against: 5.9 %
-
-dmitriyev: 1.9 %
-
-cherechen: 1.7 %
-
-kanopatskaja: 1.3 %
-
-corrupted: 1.0 %
-
-
-#### village
-
-**lukashenko: 75.5 %**
-
-**tihanovkaja: 19.0 %**
-
-against: 2.5 %
-
-dmitriyev: 0.9 %
-
-cherechen: 0.7 %
-
-kanopatskaja: 0.8 %
-
-corrupted: 0.6 %
-</details>
-
-### Major cities
-<details>
-
-#### Brest 
-
-**lukashenko: 30.1 %**
-
-**tihanovkaja: 49.8 %**
-
-against: 9.8 %
-
-dmitriyev: 3.3 %
-
-cherechen: 3.0 %
-
-kanopatskaja: 2.4 %
-
-corrupted: 1.6 %
-
-#### Viciebsk
-
-**lukashenko: 51.2 %**
-
-**tihanovkaja: 36.2 %**
-
-against: 6.1 %
-
-dmitriyev: 2.1 %
-
-cherechen: 1.9 %
-
-kanopatskaja: 1.5 %
-
-corrupted: 1.0 %
-
-#### Homel
-
-**lukashenko: 41.9 %**
-
-**tihanovkaja: 44.9 %**
-
-against: 6.4 %
-
-dmitriyev: 2.2 %
-
-cherechen: 2.0 %
-
-kanopatskaja: 1.6 %
-
-corrupted: 1.0 %
-
-#### Hrodna
-
-**lukashenko: 31.1 %**
-
-**tihanovkaja: 52.5 %**
-
-against: 7.9 %
-
-dmitriyev: 2.7 %
-
-cherechen: 2.5 %
-
-kanopatskaja: 2.0 %
-
-corrupted: 1.3 %
-
-#### Mahiliou
-
-**lukashenko: 50.5 %**
-
-**tihanovkaja: 36.6 %**
-
-against: 6.3 %
-
-dmitriyev: 2.1 %
-
-cherechen: 1.9 %
-
-kanopatskaja: 1.5 %
-
-corrupted: 1.0 %
-
-#### Lida
-
-**lukashenko: 37.5 %**
-
-**tihanovkaja: 48.0 %**
-
-against: 7.0 %
-
-dmitriyev: 2.3 %
-
-cherechen: 2.1 %
-
-kanopatskaja: 1.4 %
-
-corrupted: 1.6 %
-
-#### Baranavičy
-
-**lukashenko: 32.2 %**
-
-**tihanovkaja: 53.2 %**
-
-against: 7.1 %
-
-dmitriyev: 2.3 %
-
-cherechen: 2.2 %
-
-kanopatskaja: 1.5 %
-
-corrupted: 1.5 %
-
-
-#### Pinsk
-
-**lukashenko: 50.6 %**
-
-**tihanovkaja: 38.5 %**
-
-against: 5.4 %
-
-dmitriyev: 1.7 %
-
-cherechen: 1.6 %
-
-kanopatskaja: 1.1 %
-
-corrupted: 1.1 %
-
-
-#### Mazyr
-
-**lukashenko: 48.4 %**
-
-**tihanovkaja: 39.9 %**
-
-against: 5.7 %
-
-dmitriyev: 1.9 %
-
-cherechen: 1.8 %
-
-kanopatskaja: 1.2 %
-
-corrupted: 1.2 %
-
-#### Babrujsk
-
-**lukashenko: 50.1 %**
-
-**tihanovkaja: 38.7 %**
-
-against: 5.5 %
-
-dmitriyev: 1.7 %
-
-cherechen: 1.7 %
-
-kanopatskaja: 1.1 %
-
-corrupted: 1.2 %
-</details>
 
