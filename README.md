@@ -162,9 +162,9 @@ There are **667** poll stations left. Let's draw some charts and calculate [corr
 
 |  |By registration|By photo|
 |---|---|---|
-|People voted for Tsikhanoukaja|![](images-3/correlation/tihanovkaja-registered.png)|![](images-3/correlation/tihanovkaja-photo.png)|
-|`Tsikhanouskaya votes` / `Total votes`|![](images-3/correlation/tihanovkaja-registered-votes-part.png)|![](images-3/correlation/tihanovkaja-photo-votes-part.png)|
-|`Tsikhanouskaya votes` / `Total voters`|![](images-3/correlation/tihanovkaja-registered-voters-part.png)|![](images-3/correlation/tihanovkaja-photo-voters-part.png)|
+|People voted for Tsikhanoukaja|![](images/correlation/tihanovkaja-registered.png)|![](images/correlation/tihanovkaja-photo.png)|
+|`Tsikhanouskaya votes` / `Total votes`|![](images/correlation/tihanovkaja-registered-votes-part.png)|![](images/correlation/tihanovkaja-photo-votes-part.png)|
+|`Tsikhanouskaya votes` / `Total voters`|![](images/correlation/tihanovkaja-registered-voters-part.png)|![](images/correlation/tihanovkaja-photo-voters-part.png)|
 
 As we see `registration` data tends to give more robust resluts than `photo` data. **Absolute** data is more reliable comparing to **relative** numbers.
 
@@ -172,7 +172,7 @@ As we see `registration` data tends to give more robust resluts than `photo` dat
 
 |By registration|By photo|
 |---|---|
-|![](images-3/correlation/protest-registered.png)|![](images-3/correlation/protest-photo.png)|
+|![](images/correlation/protest-registered.png)|![](images/correlation/protest-photo.png)|
 
 
 ## 3. Clear data based on Zubr reports
@@ -222,8 +222,8 @@ After clearing the data we got this distribution:
 
 |X-axis|For Tsikhanouskaya|Against Lukashenko|
 |---|---|---|
-|Registered on *Voice*|![](images-3/correlation/tihanovkaja-registered-cleared.png)|![](images-3/correlation/protest-registered-cleared.png)|
-|Ballot photos|![](images-3/correlation/tihanovkaja-photo-cleared.png)|![](images-3/correlation/protest-photo-cleared.png)|
+|Registered on *Voice*|![](images/correlation/tihanovkaja-registered-cleared.png)|![](images/correlation/protest-registered-cleared.png)|
+|Ballot photos|![](images/correlation/tihanovkaja-photo-cleared.png)|![](images/correlation/protest-photo-cleared.png)|
 
 Town and city data is less correlated than overall distribution but it can be improved when observing only one *region* for a particular *area* or using *region* instead of *area*.
 
@@ -281,7 +281,7 @@ corrupted: 1.1 %
 
 | [Lukashenko vs Tsikhanovskaya](geo/compete.geojson) | [Lukashenko vs other options](geo/against-lukashenko.geojson) |
 |---|---|
-|[![plot1](images-3/true-map.png)](geo/compete.geojson)|[![plot2](images-3/luk-vs-rest.png)](geo/against-lukashenko.geojson)|
+|[![plot1](images/true-map.png)](geo/compete.geojson)|[![plot2](images/luk-vs-rest.png)](geo/against-lukashenko.geojson)|
 
 
 Further information is outdated:
