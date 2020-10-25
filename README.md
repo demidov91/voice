@@ -250,9 +250,33 @@ Columns:
 Distribution (`source`) with the highest `correlation` was chosen for each `area`/`region` pair. See charts and examples above.
 
 ### 3.4 Alternative candidates coefficients
-TBD
 
-## 5. Turnout estimation
+Alternative candidates in this context are all voting options except Lukashenko and Tikhanouskaya: Dmitriyeu, Cherachen, Kanapatskaya, against all candidates and corrupted ballots.
+
+There is **not enough data** on Voice platform to predict votes for other candidates than Tikhanouskaya **per polling stattion**. Average part of each alternative candidate in **neither Lukashenko nor Tikhanouskaya votes** was calculated for each area-region pair. [Coefficient of variation](https://en.wikipedia.org/wiki/Coefficient_of_variation) was chosen as a measure of reliability. There were only 2 options to choose: either total (country-wise) distribution for the candidate or area-based distribution for the candidate. Average value for a distribution with a **lower coefficient of variation** was chosen for further calculation.
+
+As far as votes **against** and **corrupted** ballots were often messed up together, **part of their sum** was initially calculated. Then **part of corrupted ballots in this pair** per each area. And then, as a result, part of **against** and **corrupted** separately.
+
+We use different distributions for different areas and candidates, so it has to be **normalized** to have **1.0** as a sum of alternative candidates' fractions per each area.
+
+Resulting dataset: [alt_candidates_coefficients.csv](alt_candidates_coefficients.csv)
+
+Columns:
+* `candidate` - one of:
+  * `dmitriyev`
+  * `kanopatskaja`
+  * `cherechen` 
+  * `against+corrupted` (1st step)
+  * `corrupted/corrupted+against` (2nd step)
+  * `against`  (3d step)
+  * `corrupted` (3d step)
+* `area`
+* `coefficient` (float number between **0** and **1**)
+* `std` (for intermediate calculations)
+* `coeff_variation` (measure of reliability)
+* `source` (one of `total` or `area`)
+
+## 4. Turnout estimation
 TBD
 
 ## 6. Caclulate total
