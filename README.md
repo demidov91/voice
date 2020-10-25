@@ -168,7 +168,7 @@ There are **667** poll stations left. Let's draw some charts and calculate [Pear
 
 As we see `registration` data tends to give more robust resluts than `photo` data. **Absolute** data is more reliable comparing to **relative** numbers.
 
-Charts for **votes against Lukashenko** is built in a similar way. Votes against Lukashenko is a **sum of votes** for Tikhanovskaya, Cherechen, Dmitriyeu, Kanapatskaya, against all candidates and corrupted ballots:
+Charts for **votes against Lukashenko** is built in a similar way. Votes against Lukashenko is a **sum of votes** for Tsikhanouskaya, Cherechen, Dmitriyeu, Kanapatskaya, against all candidates and corrupted ballots:
 
 |By registration|By photo|
 |---|---|
@@ -214,6 +214,7 @@ How to read chart info. Examples:
 
 `town_over100, Brest, source=region; k=? (3.784) r=? (0.955)` - there are **too few trusted polling stations** for **big towns in Brest region** (*Baranavičy*, *Pinsk*). Brest region coefficient ***3.784*** will be applied for this area-region pair as its coefficient of correlation (*0.955*) is higher than total big towns correlation (*0.839*) and total correlation (*0.895*).
 
+Similar charts and calculations were done for Tsikhanouskaya votes. 
 
 Outliers: [outliers.csv](outliers.csv)
 
@@ -221,10 +222,15 @@ Dataset after removing outliers: [trusted-for-alternative.csv](trusted-for-alter
 
 ### 3.3 Fix number of corrupted ballots
 
-Number of corrupted ballots is filled on another blank than the rest of official data. So, this data was often missed and not quite consistent across poll stations. It should be manually cleaned up.
+Official number of corrupted ballots was published on another blank than the rest of polling station data. So, this number was often missed and not quite consistent across stations. It should be manually cleaned up.
 
 <details>
-TBD
+ 
+[01-054-0001](http://partizan-results.com/pollingStations/01-054-0001) has votes against everyone, not 
+ 
+[07-001-0089](http://partizan-results.com/pollingStations/07-001-0089) total official votes is , not
+ 
+[07-006-0041](http://partizan-results.com/pollingStations/07-006-0041) corrupted ballots number is , not
 </details>
 
 Resulting dataset: [trusted-for-alternative-fixed.csv](trusted-for-alternative-fixed.csv)
