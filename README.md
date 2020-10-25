@@ -308,7 +308,16 @@ Resulting polling stations sizes: [total-votes.csv](total-votes.csv). This is a 
 
 ## 6. Votes per candidate
 
-TBD
+Having number of **voters** and **turnout** we can get number of `votes`.
+
+Having **votes**, number of users **registered** in *Voice* on each polling stations and **protest coefficient** we can get real number of votes for `Lukashenko`.
+
+Having **votes**, number of users **registered** in *Voice* on each polling stations and **tihanovkaja coefficient** we can get real number of votes for `Tsikhanoukaya`.
+
+Having number of users **registered** in *Voice* on each polling stations, **protest coefficient** and **alternative candidates coefficients** we can get real number of votes per each alternative candidate.
+
+Final dataset: [total-votes.csv](total-votes.csv). This is a `voice.csv` dataset with `voters`, `turnout`, `votes`, `lukashenko`, `tihanovkaja`, `dmitriyev`, `kanopatskaja`, `cherechen`, `against`, `corrupted` columns added.
+
 
 
 ## 7. Final results
