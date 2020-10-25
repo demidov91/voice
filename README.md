@@ -316,7 +316,7 @@ Having **votes**, number of users **registered** in *Voice* on each polling stat
 
 Having number of users **registered** in *Voice* on each polling stations, **protest coefficient** and **alternative candidates coefficients** we can get real number of votes per each alternative candidate.
 
-Final dataset: [total-votes.csv](total-votes.csv). This is a `voice.csv` dataset with `voters`, `turnout`, `votes`, `lukashenko`, `tihanovkaja`, `dmitriyev`, `kanopatskaja`, `cherechen`, `against`, `corrupted` columns added.
+Final dataset: [total-candidates.csv](total-candidates.csv). This is a `voice.csv` dataset with `voters`, `turnout`, `votes`, `lukashenko`, `tihanovkaja`, `dmitriyev`, `kanopatskaja`, `cherechen`, `against`, `corrupted` columns added.
 
 
 
@@ -326,7 +326,7 @@ Final dataset: [total-votes.csv](total-votes.csv). This is a `voice.csv` dataset
 
 **tihanovkaja: 42.6 %**
 
-against: 6.1 %
+against: 6.0 %
 
 dmitriyev: 1.9 %
 
@@ -343,4 +343,7 @@ corrupted: 1.1 %
 |---|---|
 |[![plot1](images/true-map.png)](geo/compete.geojson)|[![plot2](images/luk-vs-rest.png)](geo/against-lukashenko.geojson)|
 
+| [Tsikhanovskaya voters](geo/tihanovkaja.geojson) | [Lukashenko voters](geo/lukashenko.geojson) | [Voters against everyone](geo/against.geojson) |
+|---|---|---|
+|[![](images/tihanovkaja-map.png)](geo/tihanovkaja.geojson)|[![](images/luk-map.png)](geo/lukashenko.geojson)|[![](images/against-map.png)](geo/against.geojson)|
 
