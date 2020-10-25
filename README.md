@@ -9,16 +9,15 @@ Reference:
 2. Data preparation.
  * 2.1 Build common dataset
  * 2.2 Correlation
- * 2.3 Fix number of corrupted ballots
-3. Clear data based on Zubr reports
-4. Calculate coefficients
- * 4.1 For Tsikhanouskaya and against Lukashenko
- * 4.2 Alternative candidates coefficients
-5. Turnout estimation
-6. Caclulate total 
- * 6.1 Number of votes
- * 6.2 Votes per candidates
-7. Results
+3. Clear data and calculate coefficients
+ * 3.1 The plan
+ * 3.2 Outliers on chart
+ * 3.3 Fix number of corrupted ballots
+ * 3.4 Alternative candidates coefficients
+4. Turnout
+5. Number of voters
+6. Votes per candidate
+7. Final results
 
 
 
@@ -305,14 +304,14 @@ We don't have official data from **most of polling stations**. So, we don't know
 
 Total number was of voters estimated this way was too high as we know **official number of voters** per each *region* (not *area*): [voters.csv](voters.csv). It was published before elections. Each *region* got its coefficient (`< 1`) to reduce expected polling station size.  
 
-Resulting polling stations sizes: [total-votes.csv](total-votes.csv)
+Resulting polling stations sizes: [total-votes.csv](total-votes.csv). This is a `voice.csv` dataset with a `voters` column added as an **expected number of voters** on this polling station - **official data for trusted** polling stations and trusted outliers, **estimated value for the rest** of polling stations.
 
-## 6. Votes per candidates
+## 6. Votes per candidate
 
 TBD
 
 
-## 7. Final result
+## 7. Final results
 
 **lukashenko: 45.2 %**
 
