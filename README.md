@@ -195,9 +195,16 @@ As we see `registration` data tends to give more robust resluts than `photo` dat
 ### 3.2 Outliers on chart 
 It was done iterativly: analyze and remove outliers, calculate coefficient for *area-region* pair, repeat. Below are charts with non-trusted poll stations marked. Only **288 poll stations** was left as trusted. Notice that some of them were not trusted when estimating turnout (see *chapter 5*).
 
-<details>
-TBD
-</details>
+
+| area/region | Brest | Viciebsk | Homeĺ | Hrodna | Minsk | Mahilioŭ | total |
+|:---:|---|---|---|---|---|---|---|
+| Region centers except Minsk (*city*) | ![](images/registered-coefficient/protest-city-1.png) | ![](images/registered-coefficient/protest-city-2.png) | ![](images/registered-coefficient/protest-city-3.png) | ![](images/registered-coefficient/protest-city-4.png) | ![](images/registered-coefficient/protest-city-5.png) | ![](images/registered-coefficient/protest-city-6.png) | ![](images/registered-coefficient/protest-city.png) |
+| Towns with population over 100.000 (*town_over100*) | ![](images/registered-coefficient/protest-town_over100-1.png) | ![](images/registered-coefficient/protest-town_over100-2.png) | ![](images/registered-coefficient/protest-town_over100-3.png) | ![](images/registered-coefficient/protest-town_over100-4.png) | ![](images/registered-coefficient/protest-town_over100-5.png) | ![](images/registered-coefficient/protest-town_over100-6.png) | ![](images/registered-coefficient/protest-town_over100.png) |
+| Towns with population less than 100.000 (*town_below100*) | ![](images/registered-coefficient/protest-town_below100-1.png) | ![](images/registered-coefficient/protest-town_below100-2.png) | ![](images/registered-coefficient/protest-town_below100-3.png) | ![](images/registered-coefficient/protest-town_below100-4.png) | ![](images/registered-coefficient/protest-town_below100-5.png) | ![](images/registered-coefficient/protest-town_below100-6.png) | ![](images/registered-coefficient/protest-town_below100.png) |
+| Villages (*village*) | ![](images/registered-coefficient/protest-village-1.png) | ![](images/registered-coefficient/protest-village-2.png) | ![](images/registered-coefficient/protest-village-3.png) | ![](images/registered-coefficient/protest-village-4.png) | ![](images/registered-coefficient/protest-village-5.png) | ![](images/registered-coefficient/protest-village-6.png) | ![](images/registered-coefficient/protest-village.png) |
+| Rural area (*village*) | ![](images/registered-coefficient/protest-village-1.png) | ![](images/registered-coefficient/protest-village-2.png) | ![](images/registered-coefficient/protest-village-3.png) | ![](images/registered-coefficient/protest-village-4.png) | ![](images/registered-coefficient/protest-village-5.png) | ![](images/registered-coefficient/protest-village-6.png) | ![](images/registered-coefficient/protest-village.png) |
+| Total | ![](images/registered-coefficient/protest-1.png) | ![](images/registered-coefficient/protest-2.png) | ![](images/registered-coefficient/protest-3.png) | ![](images/registered-coefficient/protest-4.png) | ![](images/registered-coefficient/protest-5.png) | ![](images/registered-coefficient/protest-6.png) | ![](images/registered-coefficient/protest.png) |
+
 
 Outliers: [outliers.csv](outliers.csv)
 
@@ -214,19 +221,6 @@ TBD
 Resulting dataset: [trusted-for-alternative-fixed.csv](trusted-for-alternative-fixed.csv)
 
   
-## 4. Calculate coefficients
-
-### 4.1 For Tsikhanouskaya and against Lukashenko 
-
-After clearing the data we got this distribution:
-
-|X-axis|For Tsikhanouskaya|Against Lukashenko|
-|---|---|---|
-|Registered on *Voice*|![](images/correlation/tihanovkaja-registered-cleared.png)|![](images/correlation/protest-registered-cleared.png)|
-|Ballot photos|![](images/correlation/tihanovkaja-photo-cleared.png)|![](images/correlation/protest-photo-cleared.png)|
-
-Town and city data is less correlated than overall distribution but it can be improved when observing only one *region* for a particular *area* or using *region* instead of *area*.
-
 Here are resulting datasets: [protest_registered_coefficients.csv](protest_registered_coefficients.csv), [tihanovkaja_registered_coefficients.csv](tihanovkaja_registered_coefficients.csv)
 
 Columns:
