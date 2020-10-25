@@ -167,7 +167,7 @@ There are **667** poll stations left. Let's draw some charts and calculate [Pear
 
 As we see `registration` data tends to give more robust resluts than `photo` data. **Absolute** data is more reliable comparing to **relative** numbers.
 
-Charts for **votes against Lukashenko** is built in a similar way. Votes against Lukashenko is a **sum of votes** for Tsikhanouskaya, Cherechen, Dmitriyeu, Kanapatskaya, against all candidates and corrupted ballots:
+Charts for **votes against Lukashenko** is built in a similar way. Votes against Lukashenko is a **sum of votes** for Tsikhanouskaya, Cherachen, Dmitriyeu, Kanapatskaya, against all candidates and corrupted ballots:
 
 |By registration|By photo|
 |---|---|
@@ -322,19 +322,19 @@ Final dataset: [total-candidates.csv](total-candidates.csv). This is a `voice.cs
 
 ## 7. Final results
 
-**lukashenko: 45.2 %**
+**Lukashenko: 45.2 %**
 
-**tihanovkaja: 42.6 %**
+**Tsikhanouskaya: 42.6 %**
 
-against: 6.0 %
+Against everyone: 6.0 %
 
-dmitriyev: 1.9 %
+Dmitriyeu: 1.9 %
 
-cherechen: 1.7 %
+Cherachen: 1.7 %
 
-kanopatskaja: 1.5 %
+Kanapatskaya: 1.5 %
 
-corrupted: 1.1 %
+Corrupted ballots: 1.1 %
 
 ### On map (click for details):
 
