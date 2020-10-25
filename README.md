@@ -224,19 +224,17 @@ Dataset after removing outliers: [trusted-for-alternative.csv](trusted-for-alter
 
 Official number of corrupted ballots was published on another blank than the rest of polling station data. So, this number was often missed and not quite consistent across stations. It should be manually cleaned up.
 
-<details>
+[01-054-0001](http://partizan-results.com/pollingStations/01-054-0001) has votes **against** everyone, 196 not 381. 
  
-[01-054-0001](http://partizan-results.com/pollingStations/01-054-0001) has votes against everyone, not 
- 
-[07-001-0089](http://partizan-results.com/pollingStations/07-001-0089) total official votes is , not
- 
-[07-006-0041](http://partizan-results.com/pollingStations/07-006-0041) corrupted ballots number is , not
-</details>
+[07-001-0089](http://partizan-results.com/pollingStations/07-001-0089) **total** official votes is 2220, not 2242.
 
-Resulting dataset: [trusted-for-alternative-fixed.csv](trusted-for-alternative-fixed.csv)
+For other cases (difference < 25) total number of votes is increased if it isn't enough to meet sum, number of corrupted ballots is increased if it's not enough to meet total number. 
 
-  
-Here are resulting datasets: [protest_registered_coefficients.csv](protest_registered_coefficients.csv), [tihanovkaja_registered_coefficients.csv](tihanovkaja_registered_coefficients.csv)
+Dataset after fixing number of corrupted ballots: [trusted-for-alternative-fixed.csv](trusted-for-alternative-fixed.csv)
+
+Linear coefficients for protest votes: [protest_registered_coefficients.csv](protest_registered_coefficients.csv)
+
+Linear coefficients for Tikhanouskaya votes: [tihanovkaja_registered_coefficients.csv](tihanovkaja_registered_coefficients.csv)
 
 Columns:
 * `area` - (see `geo_categorized.csv` above)
@@ -249,13 +247,9 @@ Columns:
   * `region` - all poll stations in this *region* 
   * `total` - total distribution **except** Minsk, Minsk suburb and embassies.
   
-Distribution (`source`) with the highest `correlation` was chosen for each `area`/`region` pair. 
+Distribution (`source`) with the highest `correlation` was chosen for each `area`/`region` pair. See charts and examples above.
 
-<details>
-TBD: tables and charts 
-</details> 
-
-### 4.2 Alternative candidates coefficients
+### 3.4 Alternative candidates coefficients
 TBD
 
 ## 5. Turnout estimation
