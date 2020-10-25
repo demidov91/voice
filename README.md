@@ -156,7 +156,7 @@ Result is here: [tusted_by_voice.csv](tusted_by_voice_extended.csv). It also con
   
 ### 2.2 Correlation
 
-There are **667** poll stations left. Let's draw some charts and calculate [correlation coefficient](https://en.wikipedia.org/wiki/Correlation_coefficient):
+There are **667** poll stations left. Let's draw some charts and calculate [Pearson correlation coefficient](https://en.wikipedia.org/wiki/Correlation_coefficient):
 
 #### Votes for Tsikhanouskaya. X-axis - data according to *Voice*, Y-axis - official data:
 
@@ -168,7 +168,7 @@ There are **667** poll stations left. Let's draw some charts and calculate [corr
 
 As we see `registration` data tends to give more robust resluts than `photo` data. **Absolute** data is more reliable comparing to **relative** numbers.
 
-#### Votes against Lukashenko:
+Charts for **votes against Lukashenko** is built in a similar way. Votes against Lukashenko is a **sum of votes** for Tikhanovskaya, Cherechen, Dmitriyeu, Kanapatskaya, against all candidates and corrupted ballots:
 
 |By registration|By photo|
 |---|---|
@@ -196,7 +196,7 @@ As we see `registration` data tends to give more robust resluts than `photo` dat
 It was done iterativly: analyze and remove outliers, calculate coefficient for *area-region* pair, repeat. Below are charts with non-trusted poll stations marked. Only **288 poll stations** was left as trusted. Notice that some of them were not trusted when estimating turnout (see below).
 
 
-| area/region | Brest | Viciebsk | Homeĺ | Hrodna | Minsk | Mahilioŭ | Total |
+| area/region | Brest | Viciebsk | Homieĺ | Hrodna | Minsk | Mahilioŭ | Total |
 |:---:|---|---|---|---|---|---|---|
 | Region centers except Minsk (*city*) | ![](images/registered-coefficient/protest-city-1.png) | ![](images/registered-coefficient/protest-city-2.png) | ![](images/registered-coefficient/protest-city-3.png) | ![](images/registered-coefficient/protest-city-4.png) | ![](images/registered-coefficient/protest-city-5.png) | ![](images/registered-coefficient/protest-city-6.png) | ![](images/registered-coefficient/protest-city.png) |
 | Towns with population over 100.000 (*town_over100*) | ![](images/registered-coefficient/protest-town_over100-1.png) | ![](images/registered-coefficient/protest-town_over100-2.png) | ![](images/registered-coefficient/protest-town_over100-3.png) | ![](images/registered-coefficient/protest-town_over100-4.png) | ![](images/registered-coefficient/protest-town_over100-5.png) | ![](images/registered-coefficient/protest-town_over100-6.png) | ![](images/registered-coefficient/protest-town_over100.png) |
@@ -206,7 +206,7 @@ It was done iterativly: analyze and remove outliers, calculate coefficient for *
 
 How to read chart info. Examples:
 
-`city, Viciebsk, source=area; k=3.662 (3.467) r=0.786 (0.933)` - linear coefficient for **Viciebsk** is *3.662* but coefficient ***3.467*** will be applied for votes estimation as total distribution for **all cities** has higher  **Pearson coefficient of corelation**, *0.786 < 0.933*.
+`city, Viciebsk, source=area; k=3.662 (3.467) r=0.786 (0.933)` - linear coefficient for **Viciebsk** is *3.662* but coefficient ***3.467*** will be applied for votes estimation as total distribution for **all cities** has higher  **Pearson correlation coefficient**, *0.786 < 0.933*.
 
 `town_over100, Viciebsk, source=total; k=2.659 (3.511) r=0.875 (0.895)` - linear coefficient for **big towns in Viciebsk region** (*Navapolack*, *Orša*) is *2.659* but coefficient ***3.511*** will be applied for votes estimation as total distribution for **all poll stations except Minsk city, Minsk suburb and embassies** has higher Pearson coefficient of corelation, *0.875 < 0.875*.
 
